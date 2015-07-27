@@ -1,0 +1,27 @@
+{
+  "name": "optimize-frontend",
+  "version": "1.0.0",
+  "description": "Frontend in Jade files for optiMize Michigan's website at optimizemi.org",
+  "main": "index.jade",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-uglify": "^0.9.1"
+  },
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/optimizemi/frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/optimizemi/frontend/issues"
+  },
+  "homepage": "https://github.com/optimizemi/frontend#readme"
+}
