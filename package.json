@@ -16,10 +16,13 @@
     "url": "https://github.com/optimizemi/frontend/issues"
   },
   "homepage": "https://github.com/optimizemi/frontend#readme",
-  "dependencies": {
-    "gulp-jade": "^1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
   }
 }
