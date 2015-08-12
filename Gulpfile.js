@@ -37,9 +37,9 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('public/'))
 });
 
-gulp.task('css', function() {
-  return gulp.src('css/*')
-    .pipe(gulp.dest('public/css'));
+gulp.task('assets', function() {
+  return gulp.src('assets/**/*')
+    .pipe(gulp.dest('public/assets'));
 });
 
-gulp.task('build', ['browserify', 'jade', 'css']);
+gulp.task('build', ['browserify', 'jade', 'assets']);
