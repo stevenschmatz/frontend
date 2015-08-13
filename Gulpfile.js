@@ -1,10 +1,6 @@
 // Adapted from http://christianalfoni.github.io/javascript/2014/08/15/react-js-workflow.html
 
 var gulp = require('gulp');
-var source = require('vinyl-source-stream'); // Used to stream bundle for further handling
-var browserify = require('browserify');
-var watchify = require('watchify');
-var reactify = require('reactify');
 var react = require('gulp-react');
 var jade = require('gulp-jade');
 
