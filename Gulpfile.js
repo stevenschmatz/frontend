@@ -9,7 +9,7 @@ var jade = require('gulp-jade');
  
 gulp.task('browserify', function() {
     var bundler = browserify({
-        entries: ['js/main.js'], // Only need initial file, browserify finds the deps
+        entries: ['assets/js/main.js'], // Only need initial file, browserify finds the deps
         transform: [reactify], // We want to convert JSX to normal javascript
         debug: true, // Gives us sourcemapping
         cache: {}, packageCache: {}, fullPaths: true // Requirement of watchify
@@ -32,14 +32,21 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('jade', function() {
-  gulp.src('jade/*.jade')
+  gulp.src('assets/jade/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('public/'))
 });
 
 gulp.task('assets', function() {
-  return gulp.src('assets/**/*')
-    .pipe(gulp.dest('public/assets'));
+  gulp.src('assets/js/**/*')
+    .pipe(gulp.dest('public/assets/js'));
+  gulp.src('assets/css/**/*')
+    .pipe(gulp.dest('public/assets/css'));
+  gulp.src('assets/imgs/**/*')
+    .pipe(gulp.dest('public/assets/imgs'));
+  gulp.src('assets/fonts/**/*')
+    .pipe(gulp.dest('public/assets/fonts'));
+
 });
 
-gulp.task('build', ['browserify', 'jade', 'assets']);
+gulp.task('build', ['jade', 'assets']);
