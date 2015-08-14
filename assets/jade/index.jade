@@ -9,7 +9,7 @@ block content
 						span Meet tomorrow's
 						| innovators
 					a#playbtn.fancybox(href='https://www.youtube.com/watch?v=tIcvSc2cxGs&autoplay=1&controls=0')
-						img.img-circle(src="assets/imgs/playbtn.png" alt='play video button')
+						img.img-circle(src="/imgs/playbtn.png" alt='play video button')
 		div.about-text.text-center
 			h3 We are a social innovation community at University of Michigan. <br>
 				| By students, for students, supported by @umichlsa and our community of mentors. <br>
@@ -40,16 +40,17 @@ block content
 						button.btn.yellow-btn Get in touch
 			div.text-center
 					hr
-		#contact.contact.form
-		script(src="assets/js/newsletter.js")
-//			form.form-horizontal(action="subscribe" method="POST")
-//				fieldset
-//					legend Optimize Newsletter
-//					div.form-group
-//						input.form-control(type="text" name="name" placeholder="Name")
-//					div.form-group
-//						input.form-control(type="email" name="email" placeholder="Email")
-//					div.form-group.text-right
-//						input.btn.btn-primary.text-center(type="submit" value="Subscribe")
+		
+		div.contact.form
+			form.form-horizontal(id="newsletter" action="subscribe" method="POST")
+				fieldset
+					legend Optimize Newsletter
+					div.form-group
+						input.form-control(type="text" name="newsletter-name" placeholder="Name")
+					div.form-group
+						input.form-control(type="email" name="newsletter-email" placeholder="Email")
+					div.form-group.text-right
+						input.btn.btn-primary.text-center(type="submit" value="Subscribe")
+		script(src="assets/js/newsletter.js") 
 		div.text-center
 			hr

@@ -5678,7 +5678,7 @@ header {
     height: 100%;
     min-height: 50px;
     margin: 0.5% 2%;
-    background: url("/imgs/optimize_logo.png") no-repeat;
+    background: url("../imgs/optimize_logo.png") no-repeat;
     width: 250px; }
   header .social {
     position: relative;
@@ -5692,7 +5692,7 @@ header {
   height: 40px;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-image: url("/imgs/social.png");
+  background-image: url("../imgs/social.png");
   background-size: 855px;
   margin: 0 5px;
   cursor: pointer;
@@ -5728,7 +5728,7 @@ footer {
   position: relative;
   text-align: center;
   width: 100%;
-  background-image: url("/imgs/footer_why_not_me.png");
+  background-image: url("../imgs/footer_why_not_me.png");
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -5812,7 +5812,7 @@ footer {
   max-height: 100%; }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-  background-image: url("/imgs/fancybox_sprite.png"); }
+  background-image: url("../imgs/fancybox_sprite.png"); }
 
 #fancybox-loading {
   position: fixed;
@@ -5828,7 +5828,7 @@ footer {
 #fancybox-loading div {
   width: 44px;
   height: 44px;
-  background: url("/imgs/fancybox_loading.gif") center center no-repeat; }
+  background: url("../imgs/fancybox_loading.gif") center center no-repeat; }
 
 .fancybox-close {
   position: absolute;
@@ -5846,7 +5846,7 @@ footer {
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  background: transparent url("/imgs/blank.gif");
+  background: transparent url("../imgs/blank.gif");
   /* helps IE */
   -webkit-tap-highlight-color: transparent;
   z-index: 8040; }
@@ -5905,7 +5905,7 @@ footer {
   overflow: hidden;
   display: none;
   z-index: 8010;
-  background: url("/imgs/fancybox_overlay.png"); }
+  background: url("../imgs/fancybox_overlay.png"); }
 
 .fancybox-overlay-fixed {
   position: fixed;
@@ -5971,12 +5971,12 @@ footer {
 /*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-    background-image: url("/imgs/fancybox_sprite@2x.png");
+    background-image: url("../imgs/fancybox_sprite@2x.png");
     background-size: 44px 152px;
     /*The size of the normal image, half the size of the hi-res image*/ }
 
   #fancybox-loading div {
-    background-image: url("/imgs/fancybox_loading@2x.gif");
+    background-image: url("../imgs/fancybox_loading@2x.gif");
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/ } }
 @font-face {
@@ -5997,7 +5997,7 @@ img {
 
 .bg {
   position: relative;
-  //background-image: url("/imgs/1.jpg");
+  //background-image: url("../imgs/1.jpg");
   height: 650px;
   background-position: 50% 85%;
   background-repeat: no-repeat;
@@ -6133,7 +6133,7 @@ img {
   padding-bottom: 2%; }
 
 .umich {
-  background-image: url("/imgs/umich-logo.png");
+  background-image: url("../imgs/umich-logo.png");
   height: 60px;
   display: inline-block;
   vertical-align: top;
