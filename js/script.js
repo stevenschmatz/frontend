@@ -119,13 +119,15 @@ $(document).ready(function() {
 		$(this).children('h3').animate({
 			marginTop: 0
 		},300)
-		$(this).children('p').text('We bring together people who are passionate about social change and want to take action. We have several ways for you to get involved. No matter your age or experience, we will help you make an impact in the world');
-		$('.involveTablePic').css('-webkit-filter', 'brightness(0.3);');
+		$(this).children('p').fadeIn(200);
+		var image = $(this).find('img');
+		image.css('opacity','0.3');
 	}, function() {
 		$(this).children('h3').animate({
 			marginTop: 100
 		},300)
-		$(this).children('p').text('');
+		$(this).children('p').fadeOut(200);
+		$('.involveTablePic').css('opacity','1');
 	});
 
 	$(window).scroll(function(event){

@@ -231,7 +231,7 @@ h3 {
 	position: absolute;
 	width: 350px;
 	font-size: 50px;
-	margin: 100px 20px 0 20px;
+	margin: 100px 0 0 25px;
 	padding: 5px 0 5px 0;
 	background-color: rgba(44, 120, 156, 0.5);
 }
@@ -243,7 +243,8 @@ h3 {
 	color: white;
 	font-size: 15px;
 	z-index: 5000;
-	margin: 100px 20px 0 20px;
+	margin: 100px 0px 0 25px;
+	display: none;
 }
 
 #involveBackground td {
@@ -265,12 +266,15 @@ h3 {
 .involveTablePic {
 	width: 350px;
 	transition: all 300ms ease;
-	margin: 0 20px 0 20px;
-	background-color: black;
+	margin-right: 20px;
 }
 
-.involveTablePic:hover {
-	opacity: 0.5;
+#black {
+	background-color: black;
+	width: 350px;
+	margin-right: 25px;
+	margin-left: 25px;
+	transition: all 300ms ease;
 }
 
 .close {
