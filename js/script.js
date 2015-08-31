@@ -119,8 +119,20 @@ $(document).ready(function() {
 		$(this).children('h3').animate({
 			marginTop: 0
 		},300)
+		if($('#involveBackground h3').mouseenter()){
+			alert('aklsdjf');
+		}
+		$('.involvedDesc').css('display','block');
+	});
+
+	$('#involveBackground h3').mouseenter(function(event) {
+		$(this).animate({
+			marginTop: 0
+		},300)
 		
-		$(this).children('p').css('display','block');
+		$('.involvedDesc').css('display','block');
+
+
 	});
 
 	$('.involveTablePic').mouseleave(function(){
@@ -139,15 +151,6 @@ $(document).ready(function() {
 			msTransform: 'translateY('+ newPos +')'
 			})
 		}
-
-				// 	$('#facebook').animate({height: "100px", width: "100px"}, 600, function(){
-				// 	$("#twitter").animate({height: "100px", width: "100px"}, 600, function(){
-				// 		$("#instagram").animate({height: "105px", width: "105px"}, 600, function(){
-				// 			$("#medium").animate({height: "100px", width: "100px"}, 600, function(){
-				// 			});
-				// 		});
-				// 	});
-				// });
 
 		var contactTop = $('.contact').offset().top / 1.4; 
 
