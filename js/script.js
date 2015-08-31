@@ -139,10 +139,39 @@ $(document).ready(function() {
 			msTransform: 'translateY('+ newPos +')'
 			})
 		}
+
+				// 	$('#facebook').animate({height: "100px", width: "100px"}, 600, function(){
+				// 	$("#twitter").animate({height: "100px", width: "100px"}, 600, function(){
+				// 		$("#instagram").animate({height: "105px", width: "105px"}, 600, function(){
+				// 			$("#medium").animate({height: "100px", width: "100px"}, 600, function(){
+				// 			});
+				// 		});
+				// 	});
+				// });
+
 		var contactTop = $('.contact').offset().top / 1.4; 
+
 		if(windowTop >= contactTop) {
-			$('.contact h1').fadeIn('slow');
-		} 
+			$('.contact h1').fadeIn('slow',function(){
+				$('#facebook').css({
+					transform: 'scale(100,100)'
+				},500);
+				$('#twitter').css({
+					transform: 'scale(100,100)'
+				},500);
+
+				$('#instagram').css({
+					transform: 'scale(100,100)'
+				},500);
+
+				$('#medium').css({
+					transform: 'scale(100,100)'
+				},500);
+			});
+
+		} else if(windowTop <= 1100) {
+			$('.contact h1').fadeOut('slow');
+		}
 	});
 
 });
