@@ -119,27 +119,14 @@ $(document).ready(function() {
 		$(this).children('h3').animate({
 			marginTop: 0
 		},300)
+		$(this).children('p').text('We bring together people who are passionate about social change and want to take action. We have several ways for you to get involved. No matter your age or experience, we will help you make an impact in the world');
+		$('.involveTablePic').css('-webkit-filter', 'brightness(0.3);');
 	}, function() {
 		$(this).children('h3').animate({
 			marginTop: 100
 		},300)
+		$(this).children('p').text('');
 	});
-
-	// $('.position').mouseover(function(){
-	// 	$(this).children('h3').animate({
-	// 		marginTop: 0
-	// 	},300)
-		
-	// 	$('.involvedDesc').css('display','block');
-	// 	if($(this).children('h3').is(':animated')){
-	// 		event.preventDefault();
-	// 	}
-	// });
-
-	// $('.involveTablePic').mouseleave(function(){
-	// 	involvedOption.inactive();
-	// 	$(this).children('p').hide('fast');
-	// });
 
 	$(window).scroll(function(event){
 		var windowTop = $(window).scrollTop();
@@ -187,6 +174,32 @@ $(document).ready(function() {
 
 		} else if(windowTop <= 1100) {
 			$('.contact h1').fadeOut('slow');
+				$('#facebook').css({
+					transform: 'scale(1,1)',
+					MozTransform: 'scale(1,1)',
+					webkitTransform: 'scale(1,1)',
+					msTransform: 'scale(1,1)'
+				},500);
+				$('#twitter').css({
+					transform: 'scale(1,1)',
+					MozTransform: 'scale(1,1)',
+					webkitTransform: 'scale(1,1)',
+					msTransform: 'scale(1,1)'
+				},500);
+
+				$('#instagram').css({
+					transform: 'scale(1,1)',
+					MozTransform: 'scale(1,1)',
+					webkitTransform: 'scale(1,1)',
+					msTransform: 'scale(1,1)'
+				},500);
+
+				$('#medium').css({
+					transform: 'scale(1,1)',
+					MozTransform: 'scale(1,1)',
+					webkitTransform: 'scale(1,1)',
+					msTransform: 'scale(1,1)'
+				},500);
 		}
 	});
 
