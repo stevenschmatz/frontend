@@ -115,30 +115,31 @@ $(document).ready(function() {
 		$('.close').hide();
 	});
 
-	$('#involveBackground td').mouseenter(function(){
+	$('.position').hover(function() {
 		$(this).children('h3').animate({
 			marginTop: 0
 		},300)
-		if($('#involveBackground h3').mouseenter()){
-			alert('aklsdjf');
-		}
-		$('.involvedDesc').css('display','block');
-	});
-
-	$('#involveBackground h3').mouseenter(function(event) {
-		$(this).animate({
-			marginTop: 0
+	}, function() {
+		$(this).children('h3').animate({
+			marginTop: 100
 		},300)
+	});
+
+	// $('.position').mouseover(function(){
+	// 	$(this).children('h3').animate({
+	// 		marginTop: 0
+	// 	},300)
 		
-		$('.involvedDesc').css('display','block');
+	// 	$('.involvedDesc').css('display','block');
+	// 	if($(this).children('h3').is(':animated')){
+	// 		event.preventDefault();
+	// 	}
+	// });
 
-
-	});
-
-	$('.involveTablePic').mouseleave(function(){
-		involvedOption.inactive();
-		$(this).children('p').hide('fast');
-	});
+	// $('.involveTablePic').mouseleave(function(){
+	// 	involvedOption.inactive();
+	// 	$(this).children('p').hide('fast');
+	// });
 
 	$(window).scroll(function(event){
 		var windowTop = $(window).scrollTop();
@@ -157,18 +158,30 @@ $(document).ready(function() {
 		if(windowTop >= contactTop) {
 			$('.contact h1').fadeIn('slow',function(){
 				$('#facebook').css({
-					transform: 'scale(100,100)'
+					transform: 'scale(100,100)',
+					MozTransform: 'scale(100,100)',
+					webkitTransform: 'scale(100,100)',
+					msTransform: 'scale(100,100)'
 				},500);
 				$('#twitter').css({
-					transform: 'scale(100,100)'
+					transform: 'scale(100,100)',
+					MozTransform: 'scale(100,100)',
+					webkitTransform: 'scale(100,100)',
+					msTransform: 'scale(100,100)'
 				},500);
 
 				$('#instagram').css({
-					transform: 'scale(100,100)'
+					transform: 'scale(100,100)',
+					MozTransform: 'scale(100,100)',
+					webkitTransform: 'scale(100,100)',
+					msTransform: 'scale(100,100)'
 				},500);
 
 				$('#medium').css({
-					transform: 'scale(100,100)'
+					transform: 'scale(100,100)',
+					MozTransform: 'scale(100,100)',
+					webkitTransform: 'scale(100,100)',
+					msTransform: 'scale(100,100)'
 				},500);
 			});
 
