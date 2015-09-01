@@ -637,7 +637,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 
 	@media only screen and (max-width: 1100px){
 		.container {
-			margin-top: 210px;
+			margin-top: 20px;
 		}	
 
 		h1 {
@@ -701,6 +701,8 @@ animation: shake .5s linear 0s 1 normal forwards;
 		.involveMotto {
 			font-size: 45px;
 		}
+
+
 	}	
 
 	@media only screen and (max-width: 1000px){
@@ -715,6 +717,18 @@ animation: shake .5s linear 0s 1 normal forwards;
 
 		video {
 			display: none;
+		}
+
+		.top {
+		background-color: #0f4366;
+		height: 636px;
+		}	
+
+		.mid {
+			margin-top: 0;
+		}
+				.container {
+			margin-top: 30px;
 		}
 	}
 
