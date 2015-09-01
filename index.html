@@ -11,13 +11,17 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 	<title>optiMize</title>
 </head>
 <body>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<video src="http://optimizemi.s3.amazonaws.com/optimize.webm" id="full" class="parallax" muted autoplay loop preload='auto'></video>
+	<video id="full" class="parallax" muted autoplay loop preload='auto'>
+            <source src="https://optimizemi.s3.amazonaws.com/optimize.webm" type="video/webm">
+            <source src="https://optimizemi.s3.amazonaws.com/optimize_1080.mp4" type="video/mp4">
+            Your browser does not support the <code>video</code> element.
+        </video>
 	<script>
 	document.getElementById('full').addEventListener('loadedmetadata', function() {
   this.currentTime = 155;
@@ -26,7 +30,7 @@
 	<div id="involveBackground">
 		<img src="img/close.png" class="involveClose"/>
 		<div class="involveWrap">
-			<h1 class="involveMotto">You’re awesome. We’re awesome. Let’s talk.</h1> 
+			<h1 class="involveMotto">You’re awesome. We’re awesome. Let’s talk.</h1>
 			<p class="mottoParagraph">We’re glad you’re interested in optiMize! How would you like to get involved?</p>
 			<table>
 				<tr>
@@ -34,7 +38,7 @@
 
 					<td class="position"><h3><a href="https://docs.google.com/a/umich.edu/forms/d/16yaqDL8g8nr0cT7A_-f-Qttt9vJW4U3q4QfJaoanw-o/viewform" target="_blank">Mentor</a></h3><p class="involvedDesc"><a href="https://docs.google.com/a/umich.edu/forms/d/16yaqDL8g8nr0cT7A_-f-Qttt9vJW4U3q4QfJaoanw-o/viewform" target="_blank">Whether you’re 25 or 75, you can use your experience and expertise to help students make a positive impact.<br><br>
 						We offer a variety of ways for you to work with students, meet other mentors, and continue your own growth in the process.</a><a href="https://docs.google.com/a/umich.edu/forms/d/16yaqDL8g8nr0cT7A_-f-Qttt9vJW4U3q4QfJaoanw-o/viewform" target="_blank"></p><div id="black"><img src="img/mentor.jpg" class="involveTablePic"></div></a></td>
-					
+
 					<td class="position"><h3><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank">Partner</a></h3><p class="involvedDesc"><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank">We work with some amazing partners, ranging from small local businesses to international companies and organizations.<br><br>
 							We’d love to discuss potential opportunities for your organization to help students innovate toward a better world.</a><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank"></p><div id="black"><img src="img/partners.jpg" class="involveTablePic"></div></a></td>
 						</tr>
@@ -82,13 +86,17 @@
 
 				<div id="videoBackground">
 					<h3 class="close"><a href="#">close</a></h3>
-					<video id="video" width="800" height="450" src="http://optimizemi.s3.amazonaws.com/optimize_1080.mp4" controls></video>
+					<video id="video" width="800" height="450" controls>
+                                            <source src="https://optimizemi.s3.amazonaws.com/optimize.webm" type="video/webm">
+                                            <source src="https://optimizemi.s3.amazonaws.com/optimize_1080.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
 				</div>
 				<div class="hero-text">
 					<h1>
 						ASK YOURSELF 'WHY NOT ME?'
 					</h1>
-					<h3 class="tagline">Join us and innovate toward a better world.</h3> 
+					<h3 class="tagline">Join us and innovate toward a better world.</h3>
 					<img src="img/playbtn.png" class="play"/>
 					<h3 class="learnLink">Learn More</h3>
 				</div>
@@ -96,7 +104,7 @@
 			<div class="container">
 				<section class="mid">
 					<!-- <img src="img/why.png" class="motto"> -->
-					<h1 class="motto">Welcome to optiMize.</h1> 
+					<h1 class="motto">Welcome to optiMize.</h1>
 					<p class="bold">optiMize is a community for people who are passionate about social change and want to take action.</p>
 					<p>Our Social Innovation Challenge provides support, resources and $100,000 for student teams to turn ideas into impact.<br>The community is led by a core team of students and supported by a dedicated group of mentors and partners.<br>We’re working with the University of Michigan to make real-world impact an integral part of the college experience.</p>
 					<p class="bold">Anyone is welcome, and no experience is necessary.  We hope you’ll join us.</p>
