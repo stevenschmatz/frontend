@@ -509,6 +509,17 @@ animation: shake .5s linear 0s 1 normal forwards;
 		color: #0f4366;
 	}
 
+	#submit {
+		background-color: #0f4366;
+		color: white;
+		outline: none;
+		padding: 5px;
+		-webkit-box-shadow: none;     
+-webkit-box-shadow: none;   
+box-shadow: none;
+border: none;
+	}
+
 	#involvedBtn {
 		background-color: #0f4366;
 		border: 1px solid #0f4366;
