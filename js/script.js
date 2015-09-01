@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 	var getInfoModule = {
 		show: function(){
-			$('#involveBackground').fadeIn(500);
+			$('#involveBackground').fadeIn(300);
 			$('.top').hide();
 			$('.container').hide();
 		},
@@ -69,15 +69,15 @@ $(document).ready(function() {
 
 	var formModule = {
 		show: function(){
-			$('#involveBackground').fadeIn(500);
-			$('.newsletterForm').fadeIn(500);
+			$('#involveBackground').fadeIn(300);
+			$('.newsletterForm').fadeIn(300);
 			$('.top').hide();
 			$('.container').hide();
 			$('.involveWrap').hide();
 		},
 
 		hide: function(){
-			$('#involveBackground').fadeOut(500);
+			$('#involveBackground').fadeOut(300);
 			$('.newsletterForm').fadeOut(300);
 			$('.top').show();
 			$('.container').show();
@@ -98,6 +98,7 @@ $(document).ready(function() {
 		}
 	}
 
+
 	heroTextModule.show();
 
 	learnMore.bind('click touchstart',function(){
@@ -108,12 +109,12 @@ $(document).ready(function() {
 
 	$('#involvedBtn').bind('click touchstart',function(){
 		getInfoModule.show();
-		$(window).scroll(0);
+		$(window).scrollTop(0);
 	});
 
 	$('.newsletter').bind('click touchstart',function(){
 		formModule.show();
-		$(window).scroll(0);
+		$(window).scrollTop(0);
 	});
 
 	$('.involveClose').bind('click touchstart',function(){
@@ -163,6 +164,8 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function(event){
+
+		console.log($(window).scrollTop());
 		var windowTop = $(window).scrollTop();
 		if(windowTop < 400){
 			var newPos = (windowTop * 0.2 + 'px');
