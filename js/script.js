@@ -208,7 +208,6 @@ $(document).ready(function() {
 		}
 
 		if ($(window).width() <= 414){
-				alert('lkajsdf');
 				
 				$('#facebook').css({
 					transform: 'scale(60,60)',
