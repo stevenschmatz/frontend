@@ -21,7 +21,7 @@
 	}
 
 	.mid {
-		margin-top: 400px;
+		margin-top: 350px;
 		position: relative;
 		margin-bottom: 50px;
 	}
@@ -592,9 +592,9 @@
 			font-size: 20px;
 		}
 
-		.play {
+/*		.play {
 			display: none;
-		}
+		}*/
 
 		.learnLink {
 			width: 50%;
@@ -612,11 +612,11 @@
 			margin: 20px 0 0 0;
 			text-align: center;
 			float: none;
-			transform: translateY(350px);
-			-webkit-transform: translateY(350px);
-			-moz-transform: translateY(350px);
-			-o-transform: translateY(350px);
-			-ms-transform: translateY(350px);	
+			transform: translateY(450px);
+			-webkit-transform: translateY(450px);
+			-moz-transform: translateY(450px);
+			-o-transform: translateY(450px);
+			-ms-transform: translateY(450px);	
 			font-size: 20px;
 		}
 
