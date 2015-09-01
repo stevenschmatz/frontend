@@ -331,6 +331,7 @@
 		width: 330px;
 		color: white;
 		font-size: 15px;
+		padding: 0 10px 0 10px;
 		z-index: 5000;
 		margin: 100px 0px 0 35px;
 		display: none;
