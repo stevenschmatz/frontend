@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<div class="load">
+	<!-- <h2 style='	font-size: 50px;
+	text-align: center;
+	color: #FFD600;margin-top: 150px;
+	margin-bottom: 20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif !important;'>Cypher is Loading</h2> -->
+	<img src="img/ring.svg" class="loading"/>
+</div>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -109,5 +117,10 @@
 	<p>&copy; 2015 optiMize</p>
 </footer>
 </div>
+<script>
+	$(window).load(function(){
+		$('.load').hide();
+	});
+</script>
 </body>
 </html>

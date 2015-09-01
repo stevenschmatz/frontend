@@ -270,6 +270,18 @@
 		white-space: nowrap;
 	}
 
+	.loading {
+		position: absolute;
+		z-index: 400;
+		top: 35%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
 	#involveBackground {
 		-webkit-box-shadow: 2px 4px 6px 10000px #efefef;
 		-moz-box-shadow: 2px 4px 5px 10000px #efefef;
