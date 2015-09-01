@@ -25,7 +25,7 @@
 	<script>
 	document.getElementById('full').addEventListener('loadedmetadata', function() {
   this.currentTime = 155;
-}, false);
+});
 	</script>
 	<div id="involveBackground">
 		<img src="img/close.png" class="involveClose"/>
@@ -66,7 +66,7 @@
 
 					$.post("https://api.optimizemi.org/newsletter", { name: values[0], email: values[1] })
 					.done(function(data) {
-						alert( "Data Sent" + data);
+						alert("Data Sent" + data);
 					});
 				});
 				</script>
