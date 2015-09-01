@@ -306,6 +306,21 @@
 		-o-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
 		transform: translateX(-50%);
+		-webkit-box-shadow: 2px 4px 6px 10000px black;
+		-moz-box-shadow: 2px 4px 5px 10000px black;
+		-ms-box-shadow: 2px 4px 5px 10000px black;
+		-o-box-shadow: 2px 4px 5px 10000px black;
+		box-shadow: 2px 4px 5px 10000px black;
+		background-color: black;
+/*		display: none;
+		position: absolute;
+		width: 100%;
+		z-index: 5000;
+		height: auto;
+		background-color: #efefef;
+		vertical-align: middle;
+		top: 50%;*/
+
 	}
 
 	#involveBackground {
