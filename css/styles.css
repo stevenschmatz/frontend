@@ -328,11 +328,11 @@
 	.involvedDesc {
 		position: absolute;
 		text-align: center;
-		width: 350px;
+		width: 330px;
 		color: white;
 		font-size: 15px;
 		z-index: 5000;
-		margin: 100px 0px 0 25px;
+		margin: 100px 0px 0 35px;
 		display: none;
 	}
 
@@ -362,6 +362,7 @@
 		float: right;
 		margin-right: 50px;
 		width: 35px;
+		top: 0;
 		margin-top: 0;
 	}
 
@@ -490,6 +491,11 @@ animation: shake .5s linear 0s 1 normal forwards;
 	.newsletter:hover {
 			cursor:pointer;
 		background-color: rgba(0, 0, 0, .8);
+	}
+
+	.newsletterForm {
+		margin: 0 auto 0 auto;
+		display: block;
 	}
 
 	#involvedBtn {
