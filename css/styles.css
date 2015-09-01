@@ -639,6 +639,11 @@
 			margin-top: 50px;
 		}
 
+
+		.mid {
+			margin-top: 0;
+		}
+
 		.container p {
 			font-size: 15px;
 			width: 100%;
