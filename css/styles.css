@@ -360,11 +360,11 @@
 	}
 
 	.involveClose {
-		float: right;
-		margin-right: 50px;
+		right: 50px;
 		width: 35px;
-		top: 0;
+		top: 2%;
 		margin-top: 0;
+		position: absolute;
 	}
 
 	.involveClose:hover {
@@ -498,7 +498,15 @@ animation: shake .5s linear 0s 1 normal forwards;
 		margin: 0 auto 0 auto;
 		display: block;
 		text-align: center;
-	/*	display: none;*/
+		display: none;
+	}
+
+	input {
+		font-size: 30px;
+		padding: 5px 0 5px 0;
+		text-align: center;
+		font-family: "Block";
+		color: #0f4366;
 	}
 
 	#involvedBtn {
