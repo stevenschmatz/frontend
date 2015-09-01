@@ -90,6 +90,7 @@ $(document).ready(function() {
 
 	$('#involvedBtn').bind('click touchstart',function(){
 		getInfoModule.show();
+		$(window).scroll(0);
 	});
 
 	$('.involveClose').bind('click touchstart',function(){

@@ -97,7 +97,7 @@
 	}
 
 	.mid {
-		margin-top: 350px;
+		margin-top: 330px;
 		position: relative;
 		margin-bottom: 50px;
 	}
@@ -365,6 +365,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 	#black {
 		background-color: black;
 		width: 350px;
+		height: 263px;
 		margin-right: 25px;
 		margin-left: 25px;
 		transition: all 300ms ease;
@@ -568,6 +569,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 
 		#black {
 			width: 300px;
+			height: 225px;
 		}
 
 		#involveBackground td h3 {
@@ -632,6 +634,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 
 		#black {
 			width: 250px;
+			height: 188px;
 		}
 
 		#involveBackground td h3 {
