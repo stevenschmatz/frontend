@@ -14,80 +14,80 @@
 	}
 
 	@-webkit-keyframes shake {
-	0% {} 15% {
-		transform: rotate(25deg);
+		0% {} 15% {
+			transform: rotate(25deg);
+		}
+		30% {
+			transform: rotate(-25deg);
+		}
+		45% {
+			transform: rotate(25deg);
+		}
+		65% {
+			transform: rotate(-25deg);
+		}
+		100% {}
 	}
-	30% {
-		transform: rotate(-25deg);
+	@-moz-keyframes shake {
+		0% {} 15% {
+			transform: rotate(25deg);
+		}
+		30% {
+			transform: rotate(-25deg);
+		}
+		45% {
+			transform: rotate(25deg);
+		}
+		65% {
+			transform: rotate(-25deg);
+		}
+		100% {}
 	}
-	45% {
-		transform: rotate(25deg);
+	@-ms-keyframes shake {
+		0% {} 15% {
+			transform: rotate(25deg);
+		}
+		30% {
+			transform: rotate(-25deg);
+		}
+		45% {
+			transform: rotate(25deg);
+		}
+		65% {
+			transform: rotate(-25deg);
+		}
+		100% {}
 	}
-	65% {
-		transform: rotate(-25deg);
+	@-o-keyframes shake {
+		0% {} 15% {
+			transform: rotate(25deg);
+		}
+		30% {
+			transform: rotate(-25deg);
+		}
+		45% {
+			transform: rotate(25deg);
+		}
+		65% {
+			transform: rotate(-25deg);
+		}
+		100% {}
 	}
-	100% {}
-}
-@-moz-keyframes shake {
-	0% {} 15% {
-		transform: rotate(25deg);
+	@keyframes shake {
+		0% {} 15% {
+			transform: rotate(25deg);
+		}
+		30% {
+			transform: rotate(-25deg);
+		}
+		45% {
+			transform: rotate(25deg);
+		}
+		65% {
+			transform: rotate(-25deg);
+		}
+		100% {}
 	}
-	30% {
-		transform: rotate(-25deg);
-	}
-	45% {
-		transform: rotate(25deg);
-	}
-	65% {
-		transform: rotate(-25deg);
-	}
-	100% {}
-}
-@-ms-keyframes shake {
-	0% {} 15% {
-		transform: rotate(25deg);
-	}
-	30% {
-		transform: rotate(-25deg);
-	}
-	45% {
-		transform: rotate(25deg);
-	}
-	65% {
-		transform: rotate(-25deg);
-	}
-	100% {}
-}
-@-o-keyframes shake {
-	0% {} 15% {
-		transform: rotate(25deg);
-	}
-	30% {
-		transform: rotate(-25deg);
-	}
-	45% {
-		transform: rotate(25deg);
-	}
-	65% {
-		transform: rotate(-25deg);
-	}
-	100% {}
-}
-@keyframes shake {
-	0% {} 15% {
-		transform: rotate(25deg);
-	}
-	30% {
-		transform: rotate(-25deg);
-	}
-	45% {
-		transform: rotate(25deg);
-	}
-	65% {
-		transform: rotate(-25deg);
-	}
-	100% {}
-}
 
 	a {
 		color: inherit;
@@ -187,7 +187,7 @@
 	}
 
 	#ideas:hover {
-		background-color: white;
+		background-color: transparent;
 		color: #0f4366;
 		border: 2px solid #0f4366;
 		cursor: pointer;
@@ -214,7 +214,7 @@
 	*/
 
 	.motto {
-	/*	width: 550px;*/
+		/*	width: 550px;*/
 		height: auto;
 		margin: 10px auto 0 auto;
 		display: block;
@@ -249,11 +249,37 @@
 		display: inline;
 		margin: 0 75px 0 75px;
 		transition: all 500ms ease;
+		-webkit-backface-visibility: hidden;
+		position: relative;
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		transform: rotate(0);
+
 	}
 
 	.socialLogo:hover {
 		opacity: 0.5;
 		cursor: pointer;
+		position: relative;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		transform: rotate(0);
+
+	}
+
+	.socialLink {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	.socialLink:hover {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		transform: rotate(0);
 	}
 
 	.wrap {
@@ -339,12 +365,12 @@
 
 	#involveBackground td {
 		padding: 0;
-	/*	margin: 30px;*/
+		/*	margin: 30px;*/
 		transition: all 300ms ease;
 	}
 
 	.involveMotto {
-	/*	width: 550px;*/
+		/*	width: 550px;*/
 		height: auto;
 		margin: 50px auto 25px auto;
 		display: block;
@@ -371,10 +397,10 @@
 		opacity: 0.6;
 		cursor: pointer;
 		-webkit-animation: shake .5s linear 0s 1 normal forwards;
--moz-animation: shake .5s linear 0s 1 normal forwards;
--ms-animation: shake .5s linear 0s 1 normal forwards;
--o-animation: shake .5s linear 0s 1 normal forwards;
-animation: shake .5s linear 0s 1 normal forwards;
+		-moz-animation: shake .5s linear 0s 1 normal forwards;
+		-ms-animation: shake .5s linear 0s 1 normal forwards;
+		-o-animation: shake .5s linear 0s 1 normal forwards;
+		animation: shake .5s linear 0s 1 normal forwards;
 	}
 
 	#black {
@@ -437,7 +463,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 
 	td:hover {
 		cursor: pointer;
-	/*	opacity: .9;*/
+		/*	opacity: .9;*/
 	}
 
 	td h3 {
@@ -490,7 +516,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 	}
 
 	.newsletter:hover {
-			cursor:pointer;
+		cursor:pointer;
 		background-color: rgba(0, 0, 0, .8);
 	}
 
@@ -539,7 +565,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 	}
 
 	#involvedBtn:hover {
-			background-color: #efefef;
+		background-color: #efefef;
 		color: #0f4366;
 		border: 2px solid #0f4366;
 		cursor: pointer;
@@ -553,7 +579,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 	.contact {
 		width: 100%;
 		height: 800px;
-	    position: relative;
+		position: relative;
 		background-color: #0f4366;
 		height: 500px;
 	}
@@ -561,10 +587,10 @@ animation: shake .5s linear 0s 1 normal forwards;
 	}
 
 	.contact h1 {
-	    position: absolute;
-	    top: 10%;
-	    z-index: 400;
-	    padding-top: 0;
+		position: absolute;
+		top: 10%;
+		z-index: 400;
+		padding-top: 0;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
@@ -599,590 +625,590 @@ animation: shake .5s linear 0s 1 normal forwards;
 	}
 
 	.footerOptimize { 
-	width: 50%;}
+		width: 50%;}
 
-	/*smaller than laptop*/
+		/*smaller than laptop*/
 
-	@media only screen and (max-width: 1230px){
-		.container {
-			margin-top: 300px;
+		@media only screen and (max-width: 1230px){
+			.container {
+				margin-top: 300px;
+			}	
+
+			h1 {
+				font-size: 65px;
+			}
+
+			.involveTablePic {
+				width: 300px;
+			}
+
+			#black {
+				width: 300px;
+				height: 225px;
+			}
+
+			#involveBackground td h3 {
+				width: 300px;
+				margin-top: 50px;
+				font-size: 32px;
+			}
+
+			.involvedDesc {
+				width: 300px;
+				margin-top: 60px;
+				font-size: 14px;
+			}
+
+		}
+
+		@media only screen and (max-width: 1100px){
+			.container {
+				margin-top: 20px;
+			}	
+
+			h1 {
+				/*		padding-top: 140px;*/
+				font-size: 65px;
+			}
+
+			.involveTablePic {
+				width: 300px;
+			}
+
+			#black {
+				width: 300px;
+			}
+
+			#involveBackground td h3 {
+				width: 300px;
+				margin-top: 50px;
+				font-size: 32px;
+			}
+
+			.involvedDesc {
+				width: 300px;
+				margin-top: 60px;
+				font-size: 14px;
+			}
+		}
+
+		@media only screen and (max-width: 1024px){
+
+			h1 {
+				font-size: 50px;
+				padding-top: 50px;
+			}
+
+			.newsletter {
+				width: 50%;
+			}
+
+			.involveTablePic {
+				width: 250px;
+			}
+
+			#black {
+				width: 250px;
+				height: 188px;
+			}
+
+			#involveBackground td h3 {
+				width: 250px;
+				margin-top: 50px;
+				font-size: 32px;
+			}
+
+			.involvedDesc {
+				width: 250px;
+				margin-top: 60px;
+				font-size: 12px;
+			}
+
+			.involveMotto {
+				font-size: 45px;
+			}
+
+
 		}	
 
-		h1 {
-			font-size: 65px;
-		}
+		@media only screen and (max-width: 1000px){
+			.container {
+				margin-top: 200px;
+			}	
 
-		.involveTablePic {
-			width: 300px;
-		}
+			h1 {
+				font-size: 50px;
+				padding-top: 50px;
+			}
 
-		#black {
-			width: 300px;
-			height: 225px;
-		}
+			video {
+				display: none;
+			}
 
-		#involveBackground td h3 {
-			width: 300px;
-			margin-top: 50px;
-			font-size: 32px;
-		}
+			.top {
+				background-color: #0f4366;
+				height: 636px;
+			}	
 
-		.involvedDesc {
-			width: 300px;
-			margin-top: 60px;
-			font-size: 14px;
-		}
-
-	}
-
-	@media only screen and (max-width: 1100px){
-		.container {
-			margin-top: 20px;
-		}	
-
-		h1 {
-	/*		padding-top: 140px;*/
-			font-size: 65px;
-		}
-
-		.involveTablePic {
-			width: 300px;
-		}
-
-		#black {
-			width: 300px;
-		}
-
-		#involveBackground td h3 {
-			width: 300px;
-			margin-top: 50px;
-			font-size: 32px;
-		}
-
-		.involvedDesc {
-			width: 300px;
-			margin-top: 60px;
-			font-size: 14px;
-		}
-	}
-
-	@media only screen and (max-width: 1024px){
-		
-		h1 {
-			font-size: 50px;
-			padding-top: 50px;
-		}
-
-		.newsletter {
-			width: 50%;
-		}
-
-		.involveTablePic {
-			width: 250px;
-		}
-
-		#black {
-			width: 250px;
-			height: 188px;
-		}
-
-		#involveBackground td h3 {
-			width: 250px;
-			margin-top: 50px;
-			font-size: 32px;
-		}
-
-		.involvedDesc {
-			width: 250px;
-			margin-top: 60px;
-			font-size: 12px;
-		}
-
-		.involveMotto {
-			font-size: 45px;
+			.mid {
+				margin-top: 0;
+			}
+			.container {
+				margin-top: 30px;
+			}
 		}
 
 
-	}	
+		@media only screen and (max-width: 414px){
 
-	@media only screen and (max-width: 1000px){
-		.container {
-			margin-top: 200px;
-		}	
-
-		h1 {
-			font-size: 50px;
-			padding-top: 50px;
-		}
-
-		video {
-			display: none;
-		}
-
-		.top {
-		background-color: #0f4366;
-		height: 636px;
-		}	
-
-		.mid {
-			margin-top: 0;
-		}
-				.container {
-			margin-top: 30px;
-		}
-	}
+			h1 {
+				font-size: 45px;
+				padding-top: 20px;
+				color: white;
+			}
 
 
-	@media only screen and (max-width: 414px){
+			.top {
+				background-color: #0f4366;
+				height: 736px;
+			}	
 
-		h1 {
-			font-size: 45px;
-			padding-top: 20px;
-			color: white;
-		}
+			.tagline {
+				font-size: 20px;
+			}
 
+			.position {
+				display: block;
+				margin-bottom: 20px;
+			}
 
-		.top {
-			background-color: #0f4366;
-			height: 736px;
-		}	
+			.involveMotto {
+				font-size: 35px;
+				margin-top: 400px;
+			}
 
-		.tagline {
-			font-size: 20px;
-		}
+			.involvedLogo {
+				margin-bottom: 40px;
+			}
 
-		.position {
-			display: block;
-			margin-bottom: 20px;
-		}
-
-		.involveMotto {
-    font-size: 35px;
-    margin-top: 400px;
-}
-
-.involvedLogo {
-	margin-bottom: 40px;
-}
-
-.involveClose {
-    position: absolute;
-    right: 10px;
-    width: 35px;
-    top: 350px;
-    margin-top: 0;
-    }
+			.involveClose {
+				position: absolute;
+				right: 10px;
+				width: 35px;
+				top: 350px;
+				margin-top: 0;
+			}
 
 /*		.play {
 			display: none;
-		}*/
+			}*/
 
-		.learnLink {
-			width: 50%;
-			margin-top: 50px;
-		}
+			.learnLink {
+				width: 50%;
+				margin-top: 50px;
+			}
 
-		.logo {
-			display: block;
-			margin: 0 auto 0 auto;
-			width: 50%;
-		}
+			.logo {
+				display: block;
+				margin: 0 auto 0 auto;
+				width: 50%;
+			}
 
-		.right {
-			display: block;
-			margin: 20px 0 0 0;
-			text-align: center;
-			float: none;
-			transform: translateY(450px);
-			-webkit-transform: translateY(450px);
-			-moz-transform: translateY(450px);
-			-o-transform: translateY(450px);
-			-ms-transform: translateY(450px);	
-			font-size: 20px;
-		}
+			.right {
+				display: block;
+				margin: 20px 0 0 0;
+				text-align: center;
+				float: none;
+				transform: translateY(450px);
+				-webkit-transform: translateY(450px);
+				-moz-transform: translateY(450px);
+				-o-transform: translateY(450px);
+				-ms-transform: translateY(450px);	
+				font-size: 20px;
+			}
 
-		#ideas {
-			margin: 50px 0 0 0;
-			padding: 0;
-		}
+			#ideas {
+				margin: 50px 0 0 0;
+				padding: 0;
+			}
 
-		#ideas:hover {
-			opacity: 0.5;
-			background-color: inherit;
-			color: white;
-		}
+			#ideas:hover {
+				opacity: 0.5;
+				background-color: inherit;
+				color: white;
+			}
 
-		.motto {
-			font-size: 45px;
-		}
+			.motto {
+				font-size: 45px;
+			}
 
-		.container {
-			margin-top: 50px;
-		}
-
-
-		.mid {
-			margin-top: 0;
-		}
-
-		.container p {
-			font-size: 15px;
-			width: 100%;
-			margin-right: 0 !important;
-		}
-
-		.socialLogo {
-			width: 1px;
-			margin: 0 40px 0 40px;
-		}
-
-		.newsletter {
-			width: 100%;
-		}
-
-		nav {
-			height: 100px;
-		}
-
-		footer img {
-			width: 10%;
-			display: block;
-			margin: 0 auto 30px auto !important;
-		}
-
-		footer {
-			margin-top: 20px;
-			margin-bottom: 20px;
-			width: 100%;
-		}
-
-		footer p {
-			width: 100% !important;
-		}
-
-	}
+			.container {
+				margin-top: 50px;
+			}
 
 
+			.mid {
+				margin-top: 0;
+			}
 
+			.container p {
+				font-size: 15px;
+				width: 100%;
+				margin-right: 0 !important;
+			}
 
-@media only screen and (max-width: 375px){
+			.socialLogo {
+				width: 1px;
+				margin: 0 40px 0 40px;
+			}
 
-		h1 {
-			font-size: 35px;
-			padding-top: 20px;
-			color: white;
+			.newsletter {
+				width: 100%;
+			}
+
+			nav {
+				height: 100px;
+			}
+
+			footer img {
+				width: 10%;
+				display: block;
+				margin: 0 auto 30px auto !important;
+			}
+
+			footer {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+
+			footer p {
+				width: 100% !important;
+			}
+
 		}
 
 
-	.top {
-		background-color: #0f4366;
-		height: 568px;
-		}	
 
-		.tagline {
-			font-size: 20px;
+
+		@media only screen and (max-width: 375px){
+
+			h1 {
+				font-size: 35px;
+				padding-top: 20px;
+				color: white;
+			}
+
+
+			.top {
+				background-color: #0f4366;
+				height: 568px;
+			}	
+
+			.tagline {
+				font-size: 20px;
+			}
+
+			.play {
+				display: none;
+			}
+
+			.learnLink {
+				width: 50%;
+				margin-top: 50px;
+				font-size: 20px;
+			}
+
+			.logo {
+				display: block;
+				margin: 0 auto 0 auto;
+				width: 50%;
+			}
+
+			.involveMotto {
+				font-size: 30px;
+				margin-top:450px;
+			}
+
+			.involveClose {
+				position: absolute;
+				right: 10px;
+				width: 35px;
+				top: 400px;
+				margin-top: 0;
+			}
+			.right {
+				display: block;
+				margin: 0px 0 0 0;
+				text-align: center;
+				float: none;
+				transform: translateY(350px);
+				-webkit-transform: translateY(350px);
+				-moz-transform: translateY(350px);
+				-o-transform: translateY(350px);
+				-ms-transform: translateY(350px);	
+				font-size: 20px;
+			}
+
+			#ideas {
+				margin: 50px 0 0 0;
+				padding: 0;
+			}
+
+			#ideas:hover {
+				opacity: 0.5;
+				background-color: inherit;
+				color: white;
+			}
+
+			.motto {
+				font-size: 45px;
+			}
+
+			.container {
+				margin-top: 50px;
+			}
+
+			.container p {
+				font-size: 15px;
+				width: 100%;
+				margin-right: 0 !important;
+			}
+
+			.socialLogo {
+				width: 1px;
+				margin: 0 40px 0 40px;
+			}
+
+			.newsletter {
+				width: 100%;
+			}
+
+			nav {
+				height: 100px;
+			}
+
+			footer img {
+				width: 10%;
+				display: block;
+				margin: 0 auto 30px auto !important;
+			}
+
+			footer {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			footer p {
+				width: 100% !important;
+			}
+
 		}
 
-		.play {
-			display: none;
+
+		@media only screen and (max-width: 320px){
+
+			h1 {
+				font-size: 35px;
+				padding-top: 20px;
+				color: white;
+			}
+
+
+			.involveMotto {
+				font-size: 25px;
+				margin-top:570px;
+			}
+
+			.involveClose {
+				position: absolute;
+				right: 10px;
+				width: 30px;
+				top: 530px;
+				margin-top: 0;
+			}
+
+			.top {
+				background-color: #0f4366;
+				height: 568px;
+			}	
+
+			.tagline {
+				font-size: 20px;
+			}
+
+			.play {
+				display: none;
+			}
+
+			.learnLink {
+				width: 50%;
+				margin-top: 50px;
+				font-size: 25px;
+			}
+
+			.logo {
+				display: block;
+				margin: 0 auto 0 auto;
+				width: 50%;
+			}
+
+			.right {
+				display: block;
+				margin: 0px 0 0 0;
+				text-align: center;
+				float: none;
+				transform: translateY(350px);
+				-webkit-transform: translateY(350px);
+				-moz-transform: translateY(350px);
+				-o-transform: translateY(350px);
+				-ms-transform: translateY(350px);	
+				font-size: 20px;
+			}
+
+			#ideas {
+				margin: 50px 0 0 0;
+				padding: 0;
+			}
+
+			#ideas:hover {
+				opacity: 0.5;
+				background-color: inherit;
+				color: white;
+			}
+
+			.motto {
+				font-size: 45px;
+			}
+
+			.container {
+				margin-top: 50px;
+			}
+
+			.container p {
+				font-size: 15px;
+				width: 100%;
+				margin-right: 0 !important;
+			}
+
+			.socialLogo {
+				width: 1px;
+				margin: 0 40px 0 40px;
+			}
+
+			.newsletter {
+				width: 100%;
+			}
+
+			nav {
+				height: 100px;
+			}
+
+			footer img {
+				width: 10%;
+				display: block;
+				margin: 0 auto 30px auto !important;
+			}
+
+			footer {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			footer p {
+				width: 100% !important;
+			}
+
 		}
 
-		.learnLink {
-			width: 50%;
-			margin-top: 50px;
-			font-size: 20px;
+		/*larger than laptop*/
+
+		@media only screen and (min-width: 1300px){
+			.container {
+				margin-top: 300px;
+			}	
 		}
 
-		.logo {
-			display: block;
-			margin: 0 auto 0 auto;
-			width: 50%;
+		@media only screen and (min-width: 1350px){
+			.container {
+				margin-top: 320px;
+			}	
 		}
 
-				.involveMotto {
-    font-size: 30px;
-    margin-top:450px;
-}
-
-.involveClose {
-    position: absolute;
-    right: 10px;
-    width: 35px;
-    top: 400px;
-    margin-top: 0;
-    }
-		.right {
-			display: block;
-			margin: 0px 0 0 0;
-			text-align: center;
-			float: none;
-			transform: translateY(350px);
-			-webkit-transform: translateY(350px);
-			-moz-transform: translateY(350px);
-			-o-transform: translateY(350px);
-			-ms-transform: translateY(350px);	
-			font-size: 20px;
+		@media only screen and (min-width: 1400px){
+			.container {
+				margin-top: 400px;
+			}	
 		}
 
-		#ideas {
-			margin: 50px 0 0 0;
-			padding: 0;
+		@media only screen and (min-width: 1450px){
+			.container {
+				margin-top: 420px;
+			}	
 		}
 
-		#ideas:hover {
-			opacity: 0.5;
-			background-color: inherit;
-			color: white;
+		@media only screen and (min-width: 1500px){
+			.container {
+				margin-top: 440px;
+			}	
 		}
 
-		.motto {
-			font-size: 45px;
+		@media only screen and (min-width: 1550px){
+			.container {
+				margin-top: 460px;
+			}	
 		}
 
-		.container {
-			margin-top: 50px;
+		@media only screen and (min-width: 1600px){
+			.container {
+				margin-top: 480px;
+			}	
 		}
 
-		.container p {
-			font-size: 15px;
-			width: 100%;
-			margin-right: 0 !important;
+		@media only screen and (min-width: 1650px){
+			.container {
+				margin-top: 520px;
+			}	
 		}
 
-		.socialLogo {
-			width: 1px;
-			margin: 0 40px 0 40px;
+		@media only screen and (min-width: 1700px){
+			.container {
+				margin-top: 540px;
+			}	
 		}
 
-		.newsletter {
-			width: 100%;
+		@media only screen and (min-width: 1750px){
+			.container {
+				margin-top: 580px;
+			}	
 		}
 
-		nav {
-			height: 100px;
+		@media only screen and (min-width: 1800px){
+			.container {
+				margin-top: 610px;
+			}	
 		}
 
-		footer img {
-			width: 10%;
-			display: block;
-			margin: 0 auto 30px auto !important;
+		@media only screen and (min-width: 1850px){
+			.container {
+				margin-top: 640px;
+			}	
 		}
 
-		footer {
-			margin-top: 20px;
-			margin-bottom: 20px;
+		@media only screen and (min-width: 1900px){
+			.container {
+				margin-top: 690px;
+			}	
 		}
 
-		footer p {
-			width: 100% !important;
+		@media only screen and (min-width: 1950px){
+			.container {
+				margin-top: 720px;
+			}	
 		}
 
-	}
-
-
-@media only screen and (max-width: 320px){
-
-		h1 {
-			font-size: 35px;
-			padding-top: 20px;
-			color: white;
+		@media only screen and (min-width: 2000px){
+			.container {
+				margin-top: 750px;
+			}	
 		}
-
-
-				.involveMotto {
-    font-size: 25px;
-    margin-top:570px;
-}
-
-.involveClose {
-    position: absolute;
-    right: 10px;
-    width: 30px;
-    top: 530px;
-    margin-top: 0;
-    }
-
-	.top {
-		background-color: #0f4366;
-		height: 568px;
-		}	
-
-		.tagline {
-			font-size: 20px;
-		}
-
-		.play {
-			display: none;
-		}
-
-		.learnLink {
-			width: 50%;
-			margin-top: 50px;
-			font-size: 25px;
-		}
-
-		.logo {
-			display: block;
-			margin: 0 auto 0 auto;
-			width: 50%;
-		}
-
-		.right {
-			display: block;
-			margin: 0px 0 0 0;
-			text-align: center;
-			float: none;
-			transform: translateY(350px);
-			-webkit-transform: translateY(350px);
-			-moz-transform: translateY(350px);
-			-o-transform: translateY(350px);
-			-ms-transform: translateY(350px);	
-			font-size: 20px;
-		}
-
-		#ideas {
-			margin: 50px 0 0 0;
-			padding: 0;
-		}
-
-		#ideas:hover {
-			opacity: 0.5;
-			background-color: inherit;
-			color: white;
-		}
-
-		.motto {
-			font-size: 45px;
-		}
-
-		.container {
-			margin-top: 50px;
-		}
-
-		.container p {
-			font-size: 15px;
-			width: 100%;
-			margin-right: 0 !important;
-		}
-
-		.socialLogo {
-			width: 1px;
-			margin: 0 40px 0 40px;
-		}
-
-		.newsletter {
-			width: 100%;
-		}
-
-		nav {
-			height: 100px;
-		}
-
-		footer img {
-			width: 10%;
-			display: block;
-			margin: 0 auto 30px auto !important;
-		}
-
-		footer {
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-
-		footer p {
-			width: 100% !important;
-		}
-
-	}
-
-	/*larger than laptop*/
-
-	@media only screen and (min-width: 1300px){
-		.container {
-			margin-top: 300px;
-		}	
-	}
-
-	@media only screen and (min-width: 1350px){
-		.container {
-			margin-top: 320px;
-		}	
-	}
-
-	@media only screen and (min-width: 1400px){
-		.container {
-			margin-top: 400px;
-		}	
-	}
-
-	@media only screen and (min-width: 1450px){
-		.container {
-			margin-top: 420px;
-		}	
-	}
-
-	@media only screen and (min-width: 1500px){
-		.container {
-			margin-top: 440px;
-		}	
-	}
-
-	@media only screen and (min-width: 1550px){
-		.container {
-			margin-top: 460px;
-		}	
-	}
-
-	@media only screen and (min-width: 1600px){
-		.container {
-			margin-top: 480px;
-		}	
-	}
-
-	@media only screen and (min-width: 1650px){
-		.container {
-			margin-top: 520px;
-		}	
-	}
-
-	@media only screen and (min-width: 1700px){
-		.container {
-			margin-top: 540px;
-		}	
-	}
-
-	@media only screen and (min-width: 1750px){
-		.container {
-			margin-top: 580px;
-		}	
-	}
-
-	@media only screen and (min-width: 1800px){
-		.container {
-			margin-top: 610px;
-		}	
-	}
-
-	@media only screen and (min-width: 1850px){
-		.container {
-			margin-top: 640px;
-		}	
-	}
-
-	@media only screen and (min-width: 1900px){
-		.container {
-			margin-top: 690px;
-		}	
-	}
-
-	@media only screen and (min-width: 1950px){
-		.container {
-			margin-top: 720px;
-		}	
-	}
-
-	@media only screen and (min-width: 2000px){
-		.container {
-			margin-top: 750px;
-		}	
-	}
