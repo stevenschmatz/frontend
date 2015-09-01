@@ -97,7 +97,7 @@
 	}
 
 	.mid {
-		margin-top: 250px;
+		margin-top: 300px;
 		position: relative;
 		margin-bottom: 50px;
 	}
@@ -278,6 +278,7 @@
 		box-shadow: 2px 4px 5px 10000px #efefef;
 		display: none;
 		position: absolute;
+		width: 100%;
 		z-index: 5000;
 		height: auto;
 		background-color: #efefef;
