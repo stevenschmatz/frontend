@@ -900,10 +900,17 @@ animation: shake .5s linear 0s 1 normal forwards;
 		}
 
 				.involveMotto {
-    font-size: 35px;
-    margin-top:500px;
+    font-size: 30px;
+    margin-top:450px;
 }
 
+.involveClose {
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    top: 400px;
+    margin-top: 0;
+    }
 		.right {
 			display: block;
 			margin: 0px 0 0 0;
@@ -981,6 +988,19 @@ animation: shake .5s linear 0s 1 normal forwards;
 			color: white;
 		}
 
+
+				.involveMotto {
+    font-size: 25px;
+    margin-top:570px;
+}
+
+.involveClose {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    top: 530px;
+    margin-top: 0;
+    }
 
 	.top {
 		background-color: #0f4366;
