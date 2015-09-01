@@ -320,12 +320,12 @@
 		-o-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
 		transform: translateX(-50%);
-		-webkit-box-shadow: 2px 4px 6px 10000px rgba(0,0,0,0.9);
-		-moz-box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.9);
-		-ms-box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.9);
-		-o-box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.9);
-		box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.9);
-		background-color: rgba(0,0,0,0.9);;
+		-webkit-box-shadow: 2px 4px 6px 10000px rgba(0,0,0,0.95);
+		-moz-box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.95);
+		-ms-box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.95);
+		-o-box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.95);
+		box-shadow: 2px 4px 5px 10000px rgba(0,0,0,0.95);
+		background-color: rgba(0,0,0,0.95);;
 /*		display: none;
 		position: absolute;
 		width: 100%;
