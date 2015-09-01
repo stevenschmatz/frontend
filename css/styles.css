@@ -181,7 +181,7 @@
 
 	#ideas {
 		background-color: #0f4366;
-		border: 1px solid #0f4366;
+		border: 2px solid #0f4366;
 		padding: 10px;
 		transition: all 200ms ease;
 	}
@@ -189,7 +189,7 @@
 	#ideas:hover {
 		background-color: white;
 		color: #0f4366;
-		border: 1px solid #0f4366;
+		border: 2px solid #0f4366;
 		cursor: pointer;
 	}
 
@@ -530,7 +530,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 
 	#involvedBtn {
 		background-color: #0f4366;
-		border: 1px solid #0f4366;
+		border: 2px solid #0f4366;
 		padding: 10px;
 		width: 150px;
 		margin: 0 auto 0 auto;
@@ -541,7 +541,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 	#involvedBtn:hover {
 			background-color: #efefef;
 		color: #0f4366;
-		border: 1px solid #0f4366;
+		border: 2px solid #0f4366;
 		cursor: pointer;
 	}
 
@@ -742,14 +742,36 @@ animation: shake .5s linear 0s 1 normal forwards;
 		}
 
 
-	.top {
-		background-color: #0f4366;
-		height: 736px;
+		.top {
+			background-color: #0f4366;
+			height: 736px;
 		}	
 
 		.tagline {
 			font-size: 20px;
 		}
+
+		.position {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.involveMotto {
+    font-size: 35px;
+    margin-top: 400px;
+}
+
+.involvedLogo {
+	margin-bottom: 40px;
+}
+
+.involveClose {
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    top: 350px;
+    margin-top: 0;
+    }
 
 /*		.play {
 			display: none;
@@ -876,6 +898,11 @@ animation: shake .5s linear 0s 1 normal forwards;
 			margin: 0 auto 0 auto;
 			width: 50%;
 		}
+
+				.involveMotto {
+    font-size: 35px;
+    margin-top:500px;
+}
 
 		.right {
 			display: block;
