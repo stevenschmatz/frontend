@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 	
@@ -30,12 +30,33 @@
 					</tr>
 				</table>
 				<p>For media inquiries and miscellaneous questions, please email socialinnovators@umich.edu</p>
-<!-- 
-				<form class="newsletterForm">
-					<input type="text" placeholder="email"></input><br>
-					<input type="text" placeholder="name"></input><br>
-				</form> -->
 
+
+				<form class="newsletterForm" method="POST">
+					<h3 style="color:#0f4366;">Sign up for our newsletter</h3>
+					<input type="text" name="name" placeholder="name"></input><br><br>
+					<input type="text" name="email" placeholder="email"></input>
+					<input type="submit"></input>
+				</form>
+				<script>
+
+				$('.newsletterForm').submit(function() {
+
+					var values = [];
+
+					var name = $(".newsletterForm input[name=name]").val();
+					var email = $(".newsletterForm input[name=email]").val();
+					values.push(name);
+					values.push(email);
+					console.log(values[0]);
+					console.log(values[1]);
+
+					$.post("https://api.optimizemi.org/newsletter", { name: values[0], email: values[1] })
+					.done(function(data) {
+						alert( "Data Sent" + data);
+					});
+				});
+				</script>
 				<img src="img/optimize_logo.png" class="involvedLogo" />
 			</div>
 			<section class="top">
@@ -67,10 +88,10 @@
 				<section class="mid">
 					<!-- <img src="img/why.png" class="motto"> -->
 					<h1 class="motto">Welcome to optiMize.</h1> 
-					<p class="bold">optiMize is a student-driven social innovation movement at the University of Michigan.</p>
-					<p>We’re a community for people who are passionate about social change and want to take positive action.<br>Our Social Innovation Challenge provides support, resources, and $100k for student teams to turn ideas into impact.<br>Our programs are led by a core team of students and supported by a dedicated group of mentors and partners.<br></p>
-					<p class="bold">Anyone is welcome, and no experience is necessary.  We hope you’ll join us.</p>
-					<h3 id="involvedBtn"><a href="#">Get Involved</a></h3>
+					<p class="bold">optiMize is a community for people who are passionate about social change and want to take action.</p>
+					<p>Our Social Innovation Challenge provides support, resources and $100,000 for student teams to turn ideas into impact.<br>The community is led by a core team of students and supported by a dedicated group of mentors and partners.<br>We’ve partnered with the University of Michigan to create new models for experiential learning in the 21st century.</p>
+					<p class="bold">Anyone is welcome, and no experience is necessary.  We hope you’ll join us</p>
+					<h3 id="involvedBtn"><a href="#">I'm Interested</a></h3>
 				</section>
 
 <!-- 	<section class="cols">
@@ -98,8 +119,8 @@
 		<div class="wrap">
 			<a href="https://www.facebook.com/optiMizeMI" target="_blank"><img src="img/fb.png" class="socialLogo" id="facebook"/></a>
 			<a href="https://twitter.com/optimizemi" target="_blank"><img src="img/twitter.png" class="socialLogo" id="twitter"/></a>
-			<a href="https://instagram.com/optimizeMI/"><img src="img/instagram.gif" class="socialLogo" id="instagram"/></a>
-			<img src="img/medium.png" class="socialLogo" id="medium"/>
+			<a href="https://instagram.com/optimizeMI/" target="_blank"><img src="img/instagram.gif" class="socialLogo" id="instagram"/></a>
+			<a href="https://medium.com/@optiMizeMI" target="_blank"><img src="img/medium.png" class="socialLogo" id="medium"/></a>
 		</div>
 		<h3 class="newsletter">Subscribe to Our Newsletter</h3>
 	</div>
@@ -113,9 +134,9 @@
 </footer>
 </div>
 <script>
-	$(window).load(function(){
-		$('.load').hide();
-	});
+$(window).load(function(){
+	$('.load').hide();
+});
 </script>
 </body>
 </html>

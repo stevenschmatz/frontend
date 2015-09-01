@@ -67,6 +67,21 @@ $(document).ready(function() {
 		}
 	}
 
+	var formModule = {
+		show: function(){
+			$('.newsletterForm').fadeIn(500);
+			$('.top').hide();
+			$('.container').hide();
+			$('#full').hide();
+		},
+
+		hide: function(){
+			$('.newsletterForm').fadeOut(300);
+			$('.top').show();
+			$('.container').show();
+		}
+	}
+
 	var involvedOption = {
 		animate: function(one){
 			one.animate({
@@ -92,6 +107,11 @@ $(document).ready(function() {
 		getInfoModule.show();
 		$(window).scroll(0);
 	});
+
+	// $('.newsletter').bind('click touchstart',function(){
+	// 	formModule.show();
+	// 	$(window).scroll(0);
+	// });
 
 	$('.involveClose').bind('click touchstart',function(){
 		getInfoModule.hide();

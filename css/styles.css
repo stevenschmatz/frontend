@@ -497,6 +497,8 @@ animation: shake .5s linear 0s 1 normal forwards;
 	.newsletterForm {
 		margin: 0 auto 0 auto;
 		display: block;
+		text-align: center;
+	/*	display: none;*/
 	}
 
 	#involvedBtn {
