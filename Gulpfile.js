@@ -1,29 +1,12 @@
 // Adapted from http://christianalfoni.github.io/javascript/2014/08/15/react-js-workflow.html
-
 var gulp = require('gulp');
-var react = require('gulp-react');
-var jade = require('gulp-jade');
-
-gulp.task('react', function () {
-    return gulp.src('assets/js/**/*')
-        .pipe(react())
-        .pipe(gulp.dest('public/assets/js')); // in this line need dumanic destination
-});
- 
-gulp.task('jade', function() {
-  gulp.src('assets/jade/*.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('public/'))
-});
 
 gulp.task('assets', function() {
-  gulp.src('assets/css/**/*')
-    .pipe(gulp.dest('public/assets/css'));
-  gulp.src('assets/imgs/**/*')
-    .pipe(gulp.dest('public/assets/imgs'));
-  gulp.src('assets/fonts/**/*')
-    .pipe(gulp.dest('public/assets/fonts'));
-
+	gulp.src('css/**/*').pipe(gulp.dest('public/css'));
+	gulp.src('fonts/**/*').pipe(gulp.dest('public/fonts'));
+	gulp.src('img/**/*').pipe(gulp.dest('public/img'));
+	gulp.src('js/**/*').pipe(gulp.dest('public/js'));
+	gulp.src('*.html').pipe(gulp.dest('public'));
 });
 
-gulp.task('build', ['react','jade', 'assets']);
+gulp.task('build', ['assets']);
