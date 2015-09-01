@@ -61,7 +61,7 @@ $(document).ready(function() {
 		},
 
 		hide: function(){
-			$('#involveBackground').fadeOut(500);
+			$('#involveBackground').fadeOut(300);
 			$('.top').show();
 			$('.container').show();
 		}
@@ -90,6 +90,10 @@ $(document).ready(function() {
 
 	$('#involvedBtn').bind('click touchstart',function(){
 		getInfoModule.show();
+	});
+
+	$('.involveClose').bind('click touchstart',function(){
+		getInfoModule.hide();
 	});
 
 	$('#ideas').bind('click touchstart',function(){
