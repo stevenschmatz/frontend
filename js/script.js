@@ -116,13 +116,16 @@ $(document).ready(function() {
 	});
 
 	$('.position').hover(function() {
+
 		$(this).children('h3').animate({
 			marginTop: 0
 		},300)
 		$(this).children('p').fadeIn(200);
 		var image = $(this).find('img');
 		image.css('opacity','0.3');
+
 	}, function() {
+
 		$(this).children('h3').animate({
 			marginTop: 100
 		},300)
@@ -133,12 +136,12 @@ $(document).ready(function() {
 	$(window).scroll(function(event){
 		var windowTop = $(window).scrollTop();
 		if(windowTop < 400){
-		var newPos = (windowTop * 0.2 + 'px');
+			var newPos = (windowTop * 0.2 + 'px');
 			$('.parallax').css({
-			transform: 'translateY('+ newPos +')',
-			MozTransform: 'translateY('+ newPos +')',
-			webkitTransform: 'translateY('+ newPos +')',
-			msTransform: 'translateY('+ newPos +')'
+				transform: 'translateY('+ newPos +')',
+				MozTransform: 'translateY('+ newPos +')',
+				webkitTransform: 'translateY('+ newPos +')',
+				msTransform: 'translateY('+ newPos +')'
 			})
 		}
 
@@ -176,32 +179,64 @@ $(document).ready(function() {
 
 		} else if(windowTop <= 1100) {
 			$('.contact h1').fadeOut('slow');
+			$('#facebook').css({
+				transform: 'scale(1,1)',
+				MozTransform: 'scale(1,1)',
+				webkitTransform: 'scale(1,1)',
+				msTransform: 'scale(1,1)'
+			},500);
+			$('#twitter').css({
+				transform: 'scale(1,1)',
+				MozTransform: 'scale(1,1)',
+				webkitTransform: 'scale(1,1)',
+				msTransform: 'scale(1,1)'
+			},500);
+
+			$('#instagram').css({
+				transform: 'scale(1,1)',
+				MozTransform: 'scale(1,1)',
+				webkitTransform: 'scale(1,1)',
+				msTransform: 'scale(1,1)'
+			},500);
+
+			$('#medium').css({
+				transform: 'scale(1,1)',
+				MozTransform: 'scale(1,1)',
+				webkitTransform: 'scale(1,1)',
+				msTransform: 'scale(1,1)'
+			},500);
+		}
+
+		if ($(window).width() <= 414){
+				alert('lkajsdf');
+				
 				$('#facebook').css({
-					transform: 'scale(1,1)',
-					MozTransform: 'scale(1,1)',
-					webkitTransform: 'scale(1,1)',
-					msTransform: 'scale(1,1)'
+					transform: 'scale(60,60)',
+					MozTransform: 'scale(60,60)',
+					webkitTransform: 'scale(60,60)',
+					msTransform: 'scale(60,60)'
 				},500);
 				$('#twitter').css({
-					transform: 'scale(1,1)',
-					MozTransform: 'scale(1,1)',
-					webkitTransform: 'scale(1,1)',
-					msTransform: 'scale(1,1)'
+					transform: 'scale(60,60)',
+					MozTransform: 'scale(60,60)',
+					webkitTransform: 'scale(60,60)',
+					msTransform: 'scale(60,60)'
 				},500);
 
 				$('#instagram').css({
-					transform: 'scale(1,1)',
-					MozTransform: 'scale(1,1)',
-					webkitTransform: 'scale(1,1)',
-					msTransform: 'scale(1,1)'
+					transform: 'scale(60,60)',
+					MozTransform: 'scale(60,60)',
+					webkitTransform: 'scale(60,60)',
+					msTransform: 'scale(60,60)'
 				},500);
 
 				$('#medium').css({
-					transform: 'scale(1,1)',
-					MozTransform: 'scale(1,1)',
-					webkitTransform: 'scale(1,1)',
-					msTransform: 'scale(1,1)'
+					transform: 'scale(60,60)',
+					MozTransform: 'scale(60,60)',
+					webkitTransform: 'scale(60,60)',
+					msTransform: 'scale(60,60)'
 				},500);
+
 		}
 	});
 
