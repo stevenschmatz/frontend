@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Clear";
+	src: url('../fonts/ClearSans-Light.ttf');
+}
+
+@font-face {
+	font-family: "Block";
+	src: url('../fonts/webfont.ttf');
+}
+
+/*@font-face {
+	font-family: "Proxima";
+	src: url('../fonts/ProximaNovaCond-Semibold.otf');
+}*/
