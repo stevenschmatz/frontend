@@ -360,11 +360,11 @@
 	}
 
 	.involveClose {
+		position: absolute;
 		right: 50px;
 		width: 35px;
-		top: 2%;
+		top: 0;
 		margin-top: 0;
-		position: absolute;
 	}
 
 	.involveClose:hover {
@@ -502,7 +502,7 @@ animation: shake .5s linear 0s 1 normal forwards;
 	}
 
 	input {
-		font-size: 30px;
+		font-size: 25px;
 		padding: 5px 0 5px 0;
 		text-align: center;
 		font-family: "Block";
@@ -512,12 +512,20 @@ animation: shake .5s linear 0s 1 normal forwards;
 	#submit {
 		background-color: #0f4366;
 		color: white;
+		width: 150px;
 		outline: none;
-		padding: 5px;
+		padding: 15px;
 		-webkit-box-shadow: none;     
--webkit-box-shadow: none;   
-box-shadow: none;
-border: none;
+		-webkit-box-shadow: none;   
+		box-shadow: none;
+		border: none;
+		margin-top: 20px;
+
+	}
+
+	#submit:hover {
+		opacity: 0.7;
+		cursor: pointer;
 	}
 
 	#involvedBtn {
