@@ -61,7 +61,9 @@ $(document).ready(function() {
 
 	var getInfoModule = {
 		show: function(){
+			$('.newsletterForm').fadeOut(100);
 			$('#involveBackground').fadeIn(300);
+			$('.involveWrap').fadeIn(300);
 			$('.top').hide();
 			$('.container').hide();
 			document.getElementById('full').pause();
@@ -71,7 +73,6 @@ $(document).ready(function() {
 			$('#involveBackground').fadeOut(100);
 			$('.top').show();
 			$('.container').show();
-			document.getElementById('full').play();
 		}
 	}
 
@@ -86,7 +87,7 @@ $(document).ready(function() {
 
 		hide: function(){
 			$('#involveBackground').fadeOut(300);
-			$('.newsletterForm').fadeOut(300);
+			$('.newsletterForm').fadeOut(00);
 			$('.top').show();
 			$('.container').show();
 			$('.involveWrap').show();
@@ -126,7 +127,6 @@ $(document).ready(function() {
 	});
 
 	$('.involveClose').bind('click touchstart',function(){
-		formModule.hide();
 		getInfoModule.hide();
 		document.getElementById('full').play();
 	});
