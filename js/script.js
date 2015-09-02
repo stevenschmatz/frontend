@@ -58,10 +58,11 @@ $(document).ready(function() {
 			$('#involveBackground').fadeIn(300);
 			$('.top').hide();
 			$('.container').hide();
+			document.getElementById('full').pause();
 		},
 
 		hide: function(){
-			$('#involveBackground').fadeOut(300);
+			$('#involveBackground').fadeOut(100);
 			$('.top').show();
 			$('.container').show();
 		}
@@ -118,8 +119,8 @@ $(document).ready(function() {
 	});
 
 	$('.involveClose').bind('click touchstart',function(){
-		getInfoModule.hide();
 		formModule.hide();
+		getInfoModule.hide();
 	});
 
 	$('#ideas').bind('click touchstart',function(){
