@@ -121,6 +121,7 @@ $(document).ready(function() {
 	$('.involveClose').bind('click touchstart',function(){
 		formModule.hide();
 		getInfoModule.hide();
+		document.getElementById('full').play();
 	});
 
 	$('#ideas').bind('click touchstart',function(){
