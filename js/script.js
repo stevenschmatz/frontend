@@ -24,13 +24,13 @@ $(document).ready(function() {
 	var containerModule = {
 		show: function(){
 			$('.container').animate({
-				opacity: 1
+				opacity: 100
 			}, 1000)
 		},
 
 		hide: function(){
 			$('.container').animate({
-				opacity: 0
+				opacity: 0.0
 			}, 100)
 		}
 	}
@@ -252,7 +252,7 @@ $(window).scroll(function(event){
 	}
 
 	if ($(window).width() <= 414){
-		
+
 		$('#facebook').css({
 			transform: 'scale(60,60)',
 			MozTransform: 'scale(60,60)',
