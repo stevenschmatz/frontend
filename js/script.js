@@ -24,13 +24,13 @@ $(document).ready(function() {
 	var containerModule = {
 		show: function(){
 			$('.container').animate({
-				opacity: 100
+				opacity: 1
 			}, 1000)
 		},
 
 		hide: function(){
 			$('.container').animate({
-				opacity: 0.0
+				opacity: 0
 			}, 100)
 		}
 	}
@@ -169,13 +169,19 @@ $('.position').hover(function() {
 
 $(window).scroll(function(event){
 
-	var count = 0;
-	if(body.scrollTop() < 100 && count <= 1){
-		containerModule.hide();
-	} else {
+	if($(window).scrollTop() > 450){
 		containerModule.show();
 	}
-	count += 1;
+
+	// var count = 0;
+
+	// if(count < 0){
+	// 	containerModule.hide();
+	// } 
+
+	// if(body.scrollTop() < 100){
+	// 	count +=1;
+	// }
 
 	var windowTop = $(window).scrollTop();
 	if(windowTop < 400){
