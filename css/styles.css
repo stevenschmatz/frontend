@@ -348,7 +348,7 @@
 		height: auto;
 		background-color: #efefef;
 		vertical-align: middle;
-		top: 5%;
+		top: 3%;
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
@@ -367,10 +367,17 @@
 		display: block;
 	}
 
+	.prefix {
+		font-family: "Block";
+		font-size: 25px;
+		color: #0f4366;
+		margin-top: 0;
+	}
+
 	.mottoParagraph {
 		width: 75%;
 		text-align: center;
-		margin: 0 auto 30px auto;
+		margin: 0 auto 10px auto;
 		display: block;
 	}
 
