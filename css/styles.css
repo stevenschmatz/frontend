@@ -783,61 +783,61 @@
 
 /*			video {
 				display: none;
-			}*/
+				}*/
 
-			.top {
-				background-color: #0f4366;
-				height: 636px;
-			}	
+				.top {
+					background-color: #0f4366;
+					height: 636px;
+				}	
 
-			.mid {
-				margin-top: 0;
-			}
-			.container {
-				margin-top: 30px;
-			}
-		}
-
-
-		@media only screen and (max-width: 414px){
-
-			h1 {
-				font-size: 45px;
-				padding-top: 20px;
-				color: white;
+				.mid {
+					margin-top: 0;
+				}
+				.container {
+					margin-top: 30px;
+				}
 			}
 
 
-			.top {
-				background-color: #0f4366;
-				height: 736px;
-			}	
+			@media only screen and (max-width: 414px){
 
-			.tagline {
-				font-size: 20px;
-			}
+				h1 {
+					font-size: 45px;
+					padding-top: 20px;
+					color: white;
+				}
 
-			.position {
-				display: block;
-				margin-bottom: 20px;
-			}
 
-			.involveMotto {
-				font-size: 35px;
-				margin-top: 400px;
-			}
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
 
-			.involvedLogo {
-				margin-bottom: 40px;
-			}
+				.tagline {
+					font-size: 20px;
+				}
 
-			.involveClose {
-				position: absolute;
-				right: 10px;
-				width: 35px;
-				top: 350px;
-				margin-top: 0;
-			}
+				.position {
+					display: block;
+					margin-bottom: 20px;
+				}
+
+				.involveMotto {
+					font-size: 35px;
+					margin-top: 400px;
+				}
+
+				.involvedLogo {
+					margin-bottom: 40px;
+				}
+
+				.involveClose {
+					position: absolute;
+					right: 10px;
+					width: 35px;
+					top: 350px;
+					margin-top: 0;
+				}
 
 /*		.play {
 			display: none;

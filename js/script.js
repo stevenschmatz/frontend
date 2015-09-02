@@ -128,150 +128,159 @@ $(document).ready(function() {
 		getInfoModule.show();
 	});
 
-setInterval(function(){
-		var count = 0;
-		if(body.scrollTop() < 350 && count <= 1){
-			containerModule.hide();
-		} else {
-			containerModule.show();
-		}
-		count += 1;
-},100);
+// setInterval(function(){
+		// var count = 0;
+		// if(body.scrollTop() < 350 && count <= 1){
+		// 	containerModule.hide();
+		// } else {
+		// 	containerModule.show();
+		// }
+		// count += 1;
+// },100);
 
-	$('.play').bind("click touchstart",function(){
-		videoBackgroundModule.show();
-		$('.close').show();
+$('.play').bind("click touchstart",function(){
+	videoBackgroundModule.show();
+	$('.close').show();
 
-	});
+});
 
-	$('.close').bind("click touchstart",function(){
-		videoBackgroundModule.hide();
-		$('.close').hide();
-	});
+$('.close').bind("click touchstart",function(){
+	videoBackgroundModule.hide();
+	$('.close').hide();
+});
 
-	$('.position').hover(function() {
+$('.position').hover(function() {
 
-		$(this).children('h3').animate({
-			marginTop: 0
-		},300)
-		$(this).children('p').fadeIn(200);
-		var image = $(this).find('img');
-		image.css('opacity','0.3');
+	$(this).children('h3').animate({
+		marginTop: 0
+	},300)
+	$(this).children('p').fadeIn(200);
+	var image = $(this).find('img');
+	image.css('opacity','0.3');
 
-	}, function() {
+}, function() {
 
-		$(this).children('h3').animate({
-			marginTop: 100
-		},300)
-		$(this).children('p').fadeOut(200);
-		$('.involveTablePic').css('opacity','1');
-	});
+	$(this).children('h3').animate({
+		marginTop: 100
+	},300)
+	$(this).children('p').fadeOut(200);
+	$('.involveTablePic').css('opacity','1');
+});
 
-	$(window).scroll(function(event){
-		var windowTop = $(window).scrollTop();
-		if(windowTop < 400){
-			var newPos = (windowTop * 0.2 + 'px');
-			$('.parallax').css({
-				transform: 'translateY('+ newPos +')',
-				MozTransform: 'translateY('+ newPos +')',
-				webkitTransform: 'translateY('+ newPos +')',
-				msTransform: 'translateY('+ newPos +')'
-			})
-		}
+$(window).scroll(function(event){
 
-		var contactTop = $('.contact').offset().top / 1.4; 
+	var count = 0;
+	if(body.scrollTop() < 100 && count <= 1){
+		containerModule.hide();
+	} else {
+		containerModule.show();
+	}
+	count += 1;
 
-		if(windowTop >= contactTop) {
-			$('.contact h1').fadeIn('slow',function(){
-				$('#facebook').css({
-					transform: 'scale(100,100)',
-					MozTransform: 'scale(100,100)',
-					webkitTransform: 'scale(100,100)',
-					msTransform: 'scale(100,100)'
-				},500);
-				$('#twitter').css({
-					transform: 'scale(100,100)',
-					MozTransform: 'scale(100,100)',
-					webkitTransform: 'scale(100,100)',
-					msTransform: 'scale(100,100)'
-				},500);
+	var windowTop = $(window).scrollTop();
+	if(windowTop < 400){
+		var newPos = (windowTop * 0.2 + 'px');
+		$('.parallax').css({
+			transform: 'translateY('+ newPos +')',
+			MozTransform: 'translateY('+ newPos +')',
+			webkitTransform: 'translateY('+ newPos +')',
+			msTransform: 'translateY('+ newPos +')'
+		})
+	}
 
-				$('#instagram').css({
-					transform: 'scale(100,100)',
-					MozTransform: 'scale(100,100)',
-					webkitTransform: 'scale(100,100)',
-					msTransform: 'scale(100,100)'
-				},500);
+	var contactTop = $('.contact').offset().top / 1.4; 
 
-				$('#medium').css({
-					transform: 'scale(100,100)',
-					MozTransform: 'scale(100,100)',
-					webkitTransform: 'scale(100,100)',
-					msTransform: 'scale(100,100)'
-				},500);
-			});
-
-		} else if(windowTop <= 1100) {
-			$('.contact h1').fadeOut('slow');
+	if(windowTop >= contactTop) {
+		$('.contact h1').fadeIn('slow',function(){
 			$('#facebook').css({
-				transform: 'scale(1,1)',
-				MozTransform: 'scale(1,1)',
-				webkitTransform: 'scale(1,1)',
-				msTransform: 'scale(1,1)'
+				transform: 'scale(100,100)',
+				MozTransform: 'scale(100,100)',
+				webkitTransform: 'scale(100,100)',
+				msTransform: 'scale(100,100)'
 			},500);
-
 			$('#twitter').css({
-				transform: 'scale(1,1)',
-				MozTransform: 'scale(1,1)',
-				webkitTransform: 'scale(1,1)',
-				msTransform: 'scale(1,1)'
+				transform: 'scale(100,100)',
+				MozTransform: 'scale(100,100)',
+				webkitTransform: 'scale(100,100)',
+				msTransform: 'scale(100,100)'
 			},500);
 
 			$('#instagram').css({
-				transform: 'scale(1,1)',
-				MozTransform: 'scale(1,1)',
-				webkitTransform: 'scale(1,1)',
-				msTransform: 'scale(1,1)'
+				transform: 'scale(100,100)',
+				MozTransform: 'scale(100,100)',
+				webkitTransform: 'scale(100,100)',
+				msTransform: 'scale(100,100)'
 			},500);
 
 			$('#medium').css({
-				transform: 'scale(1,1)',
-				MozTransform: 'scale(1,1)',
-				webkitTransform: 'scale(1,1)',
-				msTransform: 'scale(1,1)'
+				transform: 'scale(100,100)',
+				MozTransform: 'scale(100,100)',
+				webkitTransform: 'scale(100,100)',
+				msTransform: 'scale(100,100)'
 			},500);
-		}
+		});
 
-		if ($(window).width() <= 414){
-				
-				$('#facebook').css({
-					transform: 'scale(60,60)',
-					MozTransform: 'scale(60,60)',
-					webkitTransform: 'scale(60,60)',
-					msTransform: 'scale(60,60)'
-				},500);
-				$('#twitter').css({
-					transform: 'scale(60,60)',
-					MozTransform: 'scale(60,60)',
-					webkitTransform: 'scale(60,60)',
-					msTransform: 'scale(60,60)'
-				},500);
+	} else if(windowTop <= 1100) {
+		$('.contact h1').fadeOut('slow');
+		$('#facebook').css({
+			transform: 'scale(1,1)',
+			MozTransform: 'scale(1,1)',
+			webkitTransform: 'scale(1,1)',
+			msTransform: 'scale(1,1)'
+		},500);
 
-				$('#instagram').css({
-					transform: 'scale(60,60)',
-					MozTransform: 'scale(60,60)',
-					webkitTransform: 'scale(60,60)',
-					msTransform: 'scale(60,60)'
-				},500);
+		$('#twitter').css({
+			transform: 'scale(1,1)',
+			MozTransform: 'scale(1,1)',
+			webkitTransform: 'scale(1,1)',
+			msTransform: 'scale(1,1)'
+		},500);
 
-				$('#medium').css({
-					transform: 'scale(60,60)',
-					MozTransform: 'scale(60,60)',
-					webkitTransform: 'scale(60,60)',
-					msTransform: 'scale(60,60)'
-				},500);
+		$('#instagram').css({
+			transform: 'scale(1,1)',
+			MozTransform: 'scale(1,1)',
+			webkitTransform: 'scale(1,1)',
+			msTransform: 'scale(1,1)'
+		},500);
 
-		}
-	});
+		$('#medium').css({
+			transform: 'scale(1,1)',
+			MozTransform: 'scale(1,1)',
+			webkitTransform: 'scale(1,1)',
+			msTransform: 'scale(1,1)'
+		},500);
+	}
+
+	if ($(window).width() <= 414){
+		
+		$('#facebook').css({
+			transform: 'scale(60,60)',
+			MozTransform: 'scale(60,60)',
+			webkitTransform: 'scale(60,60)',
+			msTransform: 'scale(60,60)'
+		},500);
+		$('#twitter').css({
+			transform: 'scale(60,60)',
+			MozTransform: 'scale(60,60)',
+			webkitTransform: 'scale(60,60)',
+			msTransform: 'scale(60,60)'
+		},500);
+
+		$('#instagram').css({
+			transform: 'scale(60,60)',
+			MozTransform: 'scale(60,60)',
+			webkitTransform: 'scale(60,60)',
+			msTransform: 'scale(60,60)'
+		},500);
+
+		$('#medium').css({
+			transform: 'scale(60,60)',
+			MozTransform: 'scale(60,60)',
+			webkitTransform: 'scale(60,60)',
+			msTransform: 'scale(60,60)'
+		},500);
+
+	}
+});
 
 });
