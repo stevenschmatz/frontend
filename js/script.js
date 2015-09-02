@@ -71,6 +71,7 @@ $(document).ready(function() {
 			$('#involveBackground').fadeOut(100);
 			$('.top').show();
 			$('.container').show();
+			document.getElementById('full').play();
 		}
 	}
 
@@ -135,6 +136,12 @@ $(document).ready(function() {
 			videoBackgroundModule.hide();
 			$('.close').hide();
 			isVideoPlaying = false;
+		}
+	});
+
+	$('#full').bind('click touchstart',function(){
+		if($('#involveBackground').attr('opacity','1')){
+			getInfoModule.hide();
 		}
 	});
 
