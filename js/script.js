@@ -128,13 +128,15 @@ $(document).ready(function() {
 		getInfoModule.show();
 	});
 
-	setInterval(function(){
-		if(body.scrollTop() > 90){
-			containerModule.show();
-		} else {
+setInterval(function(){
+		var count = 0;
+		if(body.scrollTop() < 350 && count <= 1){
 			containerModule.hide();
+		} else {
+			containerModule.show();
 		}
-	},1000)
+		count += 1;
+},100);
 
 	$('.play').bind("click touchstart",function(){
 		videoBackgroundModule.show();
@@ -166,8 +168,6 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function(event){
-
-		console.log($(window).scrollTop());
 		var windowTop = $(window).scrollTop();
 		if(windowTop < 400){
 			var newPos = (windowTop * 0.2 + 'px');
@@ -219,6 +219,7 @@ $(document).ready(function() {
 				webkitTransform: 'scale(1,1)',
 				msTransform: 'scale(1,1)'
 			},500);
+
 			$('#twitter').css({
 				transform: 'scale(1,1)',
 				MozTransform: 'scale(1,1)',
