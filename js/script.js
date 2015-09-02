@@ -12,6 +12,8 @@ $(document).ready(function() {
 	learnMore = $('.learnLink'),
 	playBtn = $('.play'),
 	isHeroTextVisible = false;
+	isVideoPlaying = false;
+	isPopupShowing = false;
 	window = $('window');
 
 	var heroTextModule = {
@@ -45,10 +47,14 @@ $(document).ready(function() {
 		},
 
 		hide: function(){
-			$('#videoBackground').fadeOut('slow');
+			$('#videoBackground').fadeOut(1000,function(){
+				isVideoPlaying = false;
+				document.getElementById('video').currentTime = 0;
+			});
 			$('.close').fadeIn('slow');
 			document.getElementById('video').pause();
 			document.getElementById('full').play();
+
 			event.preventDefault();
 		}
 	}
@@ -124,19 +130,18 @@ $(document).ready(function() {
 		document.getElementById('full').play();
 	});
 
+	$('body').bind('click touchstart',function(){
+		if(isVideoPlaying == true){
+			videoBackgroundModule.hide();
+			$('.close').hide();
+			isVideoPlaying = false;
+		}
+	});
+
+
 	$('#ideas').bind('click touchstart',function(){
 		getInfoModule.show();
 	});
-
-// setInterval(function(){
-		// var count = 0;
-		// if(body.scrollTop() < 350 && count <= 1){
-		// 	containerModule.hide();
-		// } else {
-		// 	containerModule.show();
-		// }
-		// count += 1;
-// },100);
 
 $('.play').bind("click touchstart",function(){
 	videoBackgroundModule.show();
@@ -167,21 +172,19 @@ $('.position').hover(function() {
 	$('.involveTablePic').css('opacity','1');
 });
 
+setInterval(function(){
+	var videoTime = document.getElementById('video');
+	if(videoTime.currentTime > 1){
+		isVideoPlaying = true;
+	}
+});
+
+
 $(window).scroll(function(event){
 
 	if($(window).scrollTop() > 450){
 		containerModule.show();
 	}
-
-	// var count = 0;
-
-	// if(count < 0){
-	// 	containerModule.hide();
-	// } 
-
-	// if(body.scrollTop() < 100){
-	// 	count +=1;
-	// }
 
 	var windowTop = $(window).scrollTop();
 	if(windowTop < 400){
