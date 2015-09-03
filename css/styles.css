@@ -1,11 +1,11 @@
 	* {
-		-webkit-user-select: none;
+/*		-webkit-user-select: none;*/
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-border-radius: 0;
 		-webkit-box-sizing: border-box;
 		-webkit-font-smoothing: antialiased;
 		-webkit-user-drag: none;
-		-moz-user-select: none;
+/*		-moz-user-select: none;*/
 		-moz-tap-highlight-color: rgba(0,0,0,0);
 		-moz-border-radius: 0;
 		-moz-box-sizing: border-box;
@@ -218,6 +218,7 @@
 		position: relative;
 		top: 10px;
 		margin-top: 280px;
+		display: block;
 	}	
 
 	/*.motto {
@@ -361,8 +362,8 @@
 		-moz-transform: translateX(-50%);
 		transform: translateX(-50%);
 		-webkit-box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
--moz-box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
-box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
+		box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 	}
 
 	.involvedLogo {
@@ -402,7 +403,7 @@ box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 		font-size: 13px;
 		padding: 0 10px 0 10px;
 		z-index: 5000;
-		margin: 75px 0px 0 35px;
+		margin: 75px 35px 0 35px;
 		display: none;
 	}
 
@@ -568,6 +569,7 @@ box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 		display: block;
 		text-align: center;
 		display: none;
+		width: 30%;
 	}
 
 	input {
@@ -698,11 +700,30 @@ box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 			}
 
 			.involvedDesc {
-				width: 300px;
+				width: 280px;
 				margin-top: 60px;
-				font-size: 14px;
+				font-size: 13px;
 			}
 
+			.involvedDesc:last-child{
+				margin-top: 50px;
+			}
+
+			.mid {
+				margin-top: 120px;
+			}
+
+		}
+
+		@media only screen and (max-width: 1200px){
+
+			.mid {
+				margin-top: 20px;
+			}
+
+			.container {
+				margin-top: 250px;
+			}
 		}
 
 		@media only screen and (max-width: 1100px){
@@ -732,7 +753,11 @@ box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 			.involvedDesc {
 				width: 300px;
 				margin-top: 60px;
-				font-size: 14px;
+				font-size: 13px;
+			}
+
+			.mid {
+				margin-top: 200px;
 			}
 		}
 
@@ -771,7 +796,10 @@ box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 			.involveMotto {
 				font-size: 45px;
 			}
-
+	
+			.mid {
+				margin-top: 225px;
+			}
 
 		}	
 
@@ -1223,36 +1251,36 @@ box-shadow: -1px -2px 7px 100000px rgba(0,0,0,0.75);
 
 		@media only screen and (min-width: 1750px){
 			.container {
-				margin-top: 580px;
+				margin-top: 540px;
 			}	
 		}
 
 		@media only screen and (min-width: 1800px){
 			.container {
-				margin-top: 610px;
+				margin-top: 560px;
 			}	
 		}
 
 		@media only screen and (min-width: 1850px){
 			.container {
-				margin-top: 640px;
+				margin-top: 600px;
 			}	
 		}
 
 		@media only screen and (min-width: 1900px){
 			.container {
-				margin-top: 690px;
+				margin-top: 630px;
 			}	
 		}
 
 		@media only screen and (min-width: 1950px){
 			.container {
-				margin-top: 720px;
+				margin-top: 650px;
 			}	
 		}
 
 		@media only screen and (min-width: 2000px){
 			.container {
-				margin-top: 750px;
+				margin-top: 670px;
 			}	
 		}
