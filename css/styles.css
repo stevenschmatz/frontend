@@ -701,8 +701,12 @@
 
 			.involvedDesc {
 				width: 280px;
-				margin-top: 50px;
+				margin-top: 60px;
 				font-size: 14px;
+			}
+
+			.involvedDesc:last-child{
+				margin-top: 50px;
 			}
 
 			.mid {

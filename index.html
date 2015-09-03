@@ -46,7 +46,7 @@
 							<td class="position"><h3><a href="https://docs.google.com/a/umich.edu/forms/d/16yaqDL8g8nr0cT7A_-f-Qttt9vJW4U3q4QfJaoanw-o/viewform" target="_blank">Mentor</a></h3><p class="involvedDesc"><a href="https://docs.google.com/a/umich.edu/forms/d/16yaqDL8g8nr0cT7A_-f-Qttt9vJW4U3q4QfJaoanw-o/viewform" target="_blank">Whether you’re 25 or 75, you can use your experience and expertise to help students make a positive impact.<br><br>
 								We offer a variety of ways for you to work with students, meet other mentors, and continue your own growth in the process.</a><a href="https://docs.google.com/a/umich.edu/forms/d/16yaqDL8g8nr0cT7A_-f-Qttt9vJW4U3q4QfJaoanw-o/viewform" target="_blank"></p><div id="black"><img src="img/mentor.jpg" class="involveTablePic"></div></a></td>
 
-								<td class="position"><h3 style="font-size: 30px; padding: 0px;"><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank">Potential Partner</a></h3><p class="involvedDesc"><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank">We work with some amazing partners, ranging from small local businesses to international companies and organizations.<br><br>
+								<td class="position"><h3 style="font-size: 30px; padding: 12px;"><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank">Potential Partner</a></h3><p class="involvedDesc"><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank">We work with some amazing partners, ranging from small local businesses to international companies and organizations.<br><br>
 									We’d love to discuss potential opportunities for your organization to help students innovate toward a better world.</a><a href="https://docs.google.com/a/umich.edu/forms/d/17SQLzEb4Q8VgtlVQ_P6n1WwAeZr13aKWsyMIGyH5iNw/viewform" target="_blank"></p><div id="black"><img src="img/partners.jpg" class="involveTablePic"></div></a></td>
 								</tr>
 							</table>
@@ -60,29 +60,22 @@
 								<input type="submit" id="submit" value="Submit"></input><br><br>
 						</form>
 							<script>
-							 $('.newsletterForm').submit(function(e) {
-                                                             e.preventDefault();
-                                                             $.ajax({
-                                                                 url: 'https://api.optimizemi.org/newsletter',
-                                                                 dataType: 'json',
-                                                                 type: 'POST',
-                                                                 data: {
-                                                                     name: $(".newsletterForm input[name=name]").val(),
-                                                                     email: $(".newsletterForm input[name=email]").val()
-                                                                 }
-                                                             }).done(function(response) {
-                                                                 if (response.status === 'success') {
-                                                                     console.log('You have been added!');
-                                                                 }
-                                                             }).fail(function(response) {
-                                                                 if (response.status === 409) {
-                                                                     console.log('This email is already on the mailing list.');
-                                                                 }
-                                                                 else if (response.status === 500) {
-                                                                     console.log('Unknown server error; please try again later.');
-                                                                 }
-                                                             });
-                                                         });
+							$('.newsletterForm').submit(function() {
+
+								var values = [];
+
+								var name = $(".newsletterForm input[name=name]").val();
+								var email = $(".newsletterForm input[name=email]").val();
+								values.push(name);
+								values.push(email);
+								console.log(values[0]);
+								console.log(values[1]);
+
+								$.post("https://api.optimizemi.org/newsletter", { name: values[0], email: values[1] })
+								.done(function(data) {
+									alert("Data Sent" + data);
+								});
+							});
 							</script>
 							<img src="img/optimize_logo.png" class="involvedLogo" />
 						</div>
