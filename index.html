@@ -60,22 +60,29 @@
 								<input type="submit" id="submit" value="Submit"></input><br><br>
 						</form>
 							<script>
-							$('.newsletterForm').submit(function() {
-
-								var values = [];
-
-								var name = $(".newsletterForm input[name=name]").val();
-								var email = $(".newsletterForm input[name=email]").val();
-								values.push(name);
-								values.push(email);
-								console.log(values[0]);
-								console.log(values[1]);
-
-								$.post("https://api.optimizemi.org/newsletter", { name: values[0], email: values[1] })
-								.done(function(data) {
-									alert("Data Sent" + data);
-								});
-							});
+							 $('.newsletterForm').submit(function(e) {
+                                                             e.preventDefault();
+                                                             $.ajax({
+                                                                 url: 'https://api.optimizemi.org/newsletter',
+                                                                 dataType: 'json',
+                                                                 type: 'POST',
+                                                                 data: {
+                                                                     name: $(".newsletterForm input[name=name]").val(),
+                                                                     email: $(".newsletterForm input[name=email]").val()
+                                                                 }
+                                                             }).done(function(response) {
+                                                                 if (response.status === 'success') {
+                                                                     console.log('You have been added!');
+                                                                 }
+                                                             }).fail(function(response) {
+                                                                 if (response.status === 409) {
+                                                                     console.log('This email is already on the mailing list.');
+                                                                 }
+                                                                 else if (response.status === 500) {
+                                                                     console.log('Unknown server error; please try again later.');
+                                                                 }
+                                                             });
+                                                         });
 							</script>
 							<img src="img/optimize_logo.png" class="involvedLogo" />
 						</div>
