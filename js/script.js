@@ -64,8 +64,8 @@ $(document).ready(function() {
 			$('.newsletterForm').fadeOut(100);
 			$('#involveBackground').fadeIn(300);
 			$('.involveWrap').fadeIn(300);
-			$('.top').hide();
-			$('.container').hide();
+			// $('.top').hide();
+			// $('.container').hide();
 			document.getElementById('full').pause();
 		},
 
@@ -80,8 +80,8 @@ $(document).ready(function() {
 		show: function(){
 			$('#involveBackground').fadeIn(300);
 			$('.newsletterForm').fadeIn(300);
-			$('.top').hide();
-			$('.container').hide();
+			// $('.top').hide();
+			// $('.container').hide();
 			$('.involveWrap').hide();
 		},
 
@@ -118,12 +118,12 @@ $(document).ready(function() {
 
 	$('#involvedBtn').bind('click touchstart',function(){
 		getInfoModule.show();
-		$(window).scrollTop(0);
+		// $(window).scrollTop(0);
 	});
 
 	$('.newsletter').bind('click touchstart',function(){
 		formModule.show();
-		$(window).scrollTop(0);
+		// $(window).scrollTop(0);
 	});
 
 	$('.involveClose').bind('click touchstart',function(){
@@ -145,16 +145,22 @@ $(document).ready(function() {
 		}
 	});
 
+	// $('.container').bind('click touchstart',function(){
+	// 	if($('#involveBackground').attr('opacity','1')){
+	// 		getInfoModule.hide();
+	// 	}
+	// });
+
 
 	$('#ideas').bind('click touchstart',function(){
 		getInfoModule.show();
 	});
 
-$('.play').bind("click touchstart",function(){
-	videoBackgroundModule.show();
-	$('.close').show();
-
-});
+	$('.play').bind("click touchstart",function(){
+		videoBackgroundModule.show();
+		$('.close').show();
+		
+	});
 
 $('.close').bind("click touchstart",function(){
 	videoBackgroundModule.hide();
