@@ -705,6 +705,21 @@
 				font-size: 14px;
 			}
 
+			.mid {
+				margin-top: 120px;
+			}
+
+		}
+
+		@media only screen and (max-width: 1200px){
+
+			.mid {
+				margin-top: 20px;
+			}
+
+			.container {
+				margin-top: 250px;
+			}
 		}
 
 		@media only screen and (max-width: 1100px){
@@ -735,6 +750,10 @@
 				width: 300px;
 				margin-top: 60px;
 				font-size: 14px;
+			}
+
+			.mid {
+				margin-top: 200px;
 			}
 		}
 
@@ -773,7 +792,10 @@
 			.involveMotto {
 				font-size: 45px;
 			}
-
+	
+			.mid {
+				margin-top: 225px;
+			}
 
 		}	
 
@@ -1225,36 +1247,36 @@
 
 		@media only screen and (min-width: 1750px){
 			.container {
-				margin-top: 580px;
+				margin-top: 540px;
 			}	
 		}
 
 		@media only screen and (min-width: 1800px){
 			.container {
-				margin-top: 610px;
+				margin-top: 560px;
 			}	
 		}
 
 		@media only screen and (min-width: 1850px){
 			.container {
-				margin-top: 640px;
+				margin-top: 600px;
 			}	
 		}
 
 		@media only screen and (min-width: 1900px){
 			.container {
-				margin-top: 690px;
+				margin-top: 630px;
 			}	
 		}
 
 		@media only screen and (min-width: 1950px){
 			.container {
-				margin-top: 720px;
+				margin-top: 650px;
 			}	
 		}
 
 		@media only screen and (min-width: 2000px){
 			.container {
-				margin-top: 750px;
+				margin-top: 670px;
 			}	
 		}
