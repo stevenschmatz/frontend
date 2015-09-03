@@ -403,7 +403,7 @@
 		font-size: 13px;
 		padding: 0 10px 0 10px;
 		z-index: 5000;
-		margin: 75px 0px 0 35px;
+		margin: 75px 35px 0 35px;
 		display: none;
 	}
 
@@ -700,8 +700,8 @@
 			}
 
 			.involvedDesc {
-				width: 300px;
-				margin-top: 60px;
+				width: 280px;
+				margin-top: 50px;
 				font-size: 14px;
 			}
 
