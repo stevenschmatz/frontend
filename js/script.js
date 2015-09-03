@@ -118,6 +118,7 @@ $(document).ready(function() {
 
 	$('#involvedBtn').bind('click touchstart',function(){
 		getInfoModule.show();
+		event.preventDefault();
 		// $(window).scrollTop(0);
 	});
 
@@ -137,6 +138,7 @@ $(document).ready(function() {
 			$('.close').hide();
 			isVideoPlaying = false;
 		}
+
 	});
 
 	$('#full').bind('click touchstart',function(){
@@ -153,14 +155,18 @@ $(document).ready(function() {
 
 
 	$('#ideas').bind('click touchstart',function(){
-		getInfoModule.show();
+		getInfoModule.show(function(){
+			$('.container').click(function(){
+				getInfoModule.hide();
+			});
+		});
 	});
 
-	$('.play').bind("click touchstart",function(){
-		videoBackgroundModule.show();
-		$('.close').show();
-		
-	});
+$('.play').bind("click touchstart",function(){
+	videoBackgroundModule.show();
+	$('.close').show();
+
+});
 
 $('.close').bind("click touchstart",function(){
 	videoBackgroundModule.hide();
