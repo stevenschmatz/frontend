@@ -141,19 +141,6 @@ $(document).ready(function() {
 
 	});
 
-	$('#full').bind('click touchstart',function(){
-		if($('#involveBackground').attr('opacity','1')){
-			getInfoModule.hide();
-		}
-	});
-
-	// $('.container').bind('click touchstart',function(){
-	// 	if($('#involveBackground').attr('opacity','1')){
-	// 		getInfoModule.hide();
-	// 	}
-	// });
-
-
 	$('#ideas').bind('click touchstart',function(){
 		getInfoModule.show(function(){
 			$('.container').click(function(){
