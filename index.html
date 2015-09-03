@@ -60,22 +60,19 @@
 								<input type="submit" id="submit"></input><br><br>
 						</form>
 							<script>
-							$('.newsletterForm').submit(function() {
-
-								var values = [];
-
-								var name = $(".newsletterForm input[name=name]").val();
-								var email = $(".newsletterForm input[name=email]").val();
-								values.push(name);
-								values.push(email);
-								console.log(values[0]);
-								console.log(values[1]);
-
-								$.post("https://api.optimizemi.org/newsletter", { name: values[0], email: values[1] })
-								.done(function(data) {
-									alert("Data Sent" + data);
-								});
-							});
+							$('.newsletterForm').submit(function(e) {
+                                                            e.preventDefault();
+                                                            $.ajax({
+                                                                url: 'https://api.optimizemi.org/newsletter',
+                                                                dataType: 'json',
+                                                                type: 'POST',
+                                                                data: {
+                                                                    name: $(".newsletterForm input[name=name]").val(),
+                                                                    email: $(".newsletterForm input[name=email]").val()
+                                                                },
+                                                            });
+                                                            return false;
+                                                         });
 							</script>
 							<img src="img/optimize_logo.png" class="involvedLogo" />
 						</div>
