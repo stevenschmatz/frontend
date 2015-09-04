@@ -54,7 +54,6 @@ $(document).ready(function() {
 			$('.close').fadeIn('slow');
 			document.getElementById('video').pause();
 			document.getElementById('full').play();
-
 			event.preventDefault();
 		}
 	}
@@ -134,6 +133,8 @@ $(document).ready(function() {
 
 	$('body').bind('click touchstart',function(){
 		if(isVideoPlaying == true){
+					alert('lkjsdlkjf');
+			console.log('yo');
 			videoBackgroundModule.hide();
 			$('.close').hide();
 			isVideoPlaying = false;

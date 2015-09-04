@@ -268,9 +268,9 @@
 		transition: all 500ms ease;
 		-webkit-backface-visibility: hidden;
 		position: relative;
-		-webkit-transform: rotate(0);
+/*		-webkit-transform: rotate(0);
 		-moz-transform: rotate(0);
-		transform: rotate(0);
+		transform: rotate(0);*/
 
 	}
 
@@ -279,24 +279,24 @@
 		cursor: pointer;
 		position: relative;
 		-webkit-backface-visibility: hidden;
-		-webkit-transform: rotate(0);
+/*		-webkit-transform: rotate(0);
 		-moz-transform: rotate(0);
-		transform: rotate(0);
+		transform: rotate(0);*/
 
 	}
 
 	.socialLink {
 		-webkit-backface-visibility: hidden;
-		-webkit-transform: rotate(0);
+/*		-webkit-transform: rotate(0);
 		-moz-transform: rotate(0);
-		transform: rotate(0);
+		transform: rotate(0);*/
 	}
 
 	.socialLink:hover {
 		-webkit-backface-visibility: hidden;
-		-webkit-transform: rotate(0);
+/*		-webkit-transform: rotate(0);
 		-moz-transform: rotate(0);
-		transform: rotate(0);
+		transform: rotate(0);*/
 	}
 
 	.wrap {
