@@ -1052,7 +1052,7 @@
 
 			.involveTablePic {
 				width: 300px;
-				margin-bottom: 500px;
+				margin-bottom: 50px;
 			}
 
 			#black {
@@ -1073,7 +1073,9 @@
 			.involvedDesc {
 				width: 300px;
 				margin-top: 55px;
-				font-size: 12px;
+				font-size: 14px;
+				margin-left: 10px;
+				margin-right: 10px;
 			}
 
 				.top {
@@ -1091,7 +1093,7 @@
 				}
 
 				.involveMotto {
-					font-size: 35px;
+					font-size: 40px;
 					margin-top: 20px;
 				}
 
@@ -1109,6 +1111,10 @@
 
 				#involveBackground {
 					position: absolute;
+				}
+
+				.involveWrap {
+					margin-top: 50px;
 				}
 			}
 
@@ -1136,9 +1142,13 @@
 					margin-bottom: 20px;
 				}
 
+				.mottoParagraph{
+					margin-top: 10px !important;
+				}
+
 				.involveMotto {
 					font-size: 35px;
-					margin-top: 20px;
+					margin-top: 50px;
 				}
 
 				.involvedLogo {
