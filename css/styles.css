@@ -1,11 +1,11 @@
 	* {
-/*		-webkit-user-select: none;*/
+		/*		-webkit-user-select: none;*/
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-border-radius: 0;
 		-webkit-box-sizing: border-box;
 		-webkit-font-smoothing: antialiased;
 		-webkit-user-drag: none;
-/*		-moz-user-select: none;*/
+		/*		-moz-user-select: none;*/
 		-moz-tap-highlight-color: rgba(0,0,0,0);
 		-moz-border-radius: 0;
 		-moz-box-sizing: border-box;
@@ -367,7 +367,7 @@
 	}
 
 	.involvedLogo {
-		width: 15%;
+		width: 150px;
 		margin: 0 auto 20px auto;
 		display: block;
 	}
@@ -735,25 +735,35 @@
 				/*		padding-top: 140px;*/
 				font-size: 65px;
 			}
-
-			.involveTablePic {
-				width: 300px;
+	.involveTablePic {
+				width: 250px;
 			}
 
 			#black {
-				width: 300px;
+				width: 250px;
+				height: 188px;
 			}
 
 			#involveBackground td h3 {
-				width: 300px;
-				margin-top: 50px;
+				width: 250px;
+				margin-top: 35px;
 				font-size: 32px;
 			}
 
 			.involvedDesc {
-				width: 300px;
+				width: 250px;
 				margin-top: 60px;
-				font-size: 13px;
+				font-size: 12px;
+				margin-right: 25px;
+				margin-left: 25px;
+			}
+
+			#potential {
+				font-size: 25px !important;
+			}
+
+			.involveMotto {
+				font-size: 45px;
 			}
 
 			.mid {
@@ -784,19 +794,25 @@
 			#involveBackground td h3 {
 				width: 250px;
 				margin-top: 50px;
-				font-size: 32px;
+				font-size: 25px;
+			}
+
+			#potential {
+				font-size: 18px;
 			}
 
 			.involvedDesc {
 				width: 250px;
 				margin-top: 60px;
-				font-size: 12px;
+				font-size: 13px;
+				margin-left: 25px;
+				margin-right: 25px;
 			}
 
 			.involveMotto {
-				font-size: 45px;
+				font-size: 40px;
 			}
-	
+
 			.mid {
 				margin-top: 225px;
 			}
@@ -828,7 +844,194 @@
 				.container {
 					margin-top: 30px;
 				}
+
+
 			}
+
+			@media only screen and (max-width: 950px){
+			.involveTablePic {
+				width: 220px;
+			}
+		
+			#black {
+				width: 220px;
+				height: 150px;
+			}
+
+			#involveBackground td h3 {
+				width: 220px;
+				margin-top: 50px;
+				font-size: 23px;
+			}
+
+			.involvedDesc {
+				width: 220px;
+				margin-top: 55px;
+				font-size: 12px;
+			}
+
+			.involveMotto {
+				font-size: 35px;
+			}
+			}
+
+
+			@media only screen and (max-width: 900px){
+				.motto {
+					font-size: 45px;
+				}
+				.container p {
+					font-family: 'Clear';
+					text-align: center;
+					line-height: 1.3em;
+					font-size: 20px;
+					width: 90%;
+					margin: 0 auto 20px auto;
+					display: block;
+				}
+			}
+
+			@media only screen and (max-width: 880px){
+			.involveTablePic {
+				width: 200px;
+			}
+		
+			#black {
+				width: 200px;
+				height: 150px;
+			}
+
+			#involveBackground td h3 {
+				width: 200px;
+				margin-top: 0px;
+				font-size: 23px;
+			}
+
+			.involvedDesc {
+				width: 200px;
+				margin-top: 55px;
+				font-size: 12px;
+			}
+
+			.involveMotto {
+				font-size: 35px;
+			}
+
+			#potential {
+				font-size: 20px !important;
+			}
+			}
+
+
+
+			@media only screen and (max-width: 793px){
+			.involveTablePic {
+				width: 200px;
+			}
+
+			.position::after {
+			 content:"\A"; white-space:pre;
+			 margin-right: 
+		}
+		
+			#black {
+				width: 200px;
+				height: 150px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+
+			#involveBackground td h3 {
+				width: 200px;
+				margin-top: 50px;
+				font-size: 23px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+
+			.involvedDesc {
+				width: 200px;
+				margin-top: 55px;
+				font-size: 12px;
+			}
+
+			.involveMotto {
+				font-size: 30px;
+			}
+			#potential {
+				font-size: 20px !important;
+			}
+			}
+			@media only screen and (max-width: 650px){
+				h1 {
+					font-size: 45px;
+					padding-top: 20px;
+					color: white;
+				}
+
+			.involveTablePic {
+				width: 300px;
+				margin-bottom: 500px;
+			}
+
+			#black {
+				width: 300px;
+				height: 150px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+
+			#involveBackground td h3 {
+				width: 300px;
+				margin-top: 50px;
+				font-size: 23px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+
+			.involvedDesc {
+				width: 300px;
+				margin-top: 55px;
+				font-size: 12px;
+			}
+
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
+
+				.tagline {
+					font-size: 20px;
+				}
+
+				.position {
+					display: block;
+					margin-bottom: 20px;
+				}
+
+				.involveMotto {
+					font-size: 35px;
+					margin-top: 20px;
+				}
+
+				.involvedLogo {
+					margin-bottom: 40px;
+				}
+
+				.involveClose {
+					position: absolute;
+					right: 10px;
+					width: 25px;
+					top: 10px;
+					margin-top: 0;
+				}
+
+				#involveBackground {
+					position: absolute;
+				}
+			}
+
+
 
 
 			@media only screen and (max-width: 414px){
@@ -999,7 +1202,7 @@
 
 			.involveMotto {
 				font-size: 30px;
-				margin-top:450px;
+	/*			margin-top:450px;*/
 			}
 
 			.involveClose {
@@ -1034,7 +1237,7 @@
 			}
 
 			.motto {
-				font-size: 45px;
+				font-size: 32px;
 			}
 
 			.container {
@@ -1080,6 +1283,10 @@
 
 		@media only screen and (max-width: 320px){
 
+			#involveBackground {
+				position: absolute;
+			}
+
 			h1 {
 				font-size: 35px;
 				padding-top: 20px;
@@ -1089,14 +1296,14 @@
 
 			.involveMotto {
 				font-size: 25px;
-				margin-top:570px;
+				margin-top:30px;
 			}
 
 			.involveClose {
 				position: absolute;
 				right: 10px;
-				width: 30px;
-				top: 530px;
+				width: 20px;
+				top: 10px;
 				margin-top: 0;
 			}
 
