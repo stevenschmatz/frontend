@@ -962,7 +962,88 @@
 				font-size: 20px !important;
 			}
 			}
-			@media only screen and (max-width: 650px){
+		@media only screen and (max-width: 650px){
+			h1 {
+				font-size: 45px;
+				padding-top: 20px;
+					color: white;
+			}
+
+			.involveTablePic {
+				width: 300px;
+			/*	margin-top: 200px;*/
+			}
+
+			#black {
+				width: 300px;
+				height: 225px;
+				margin-right: 10px;
+				margin-left: 10px;
+				margin-top: 100px;
+			}
+
+			.prefix {
+				margin-bottom: -80px;
+			}
+
+			.involveWrap p {
+				margin-top: 50px
+			}
+
+			#involveBackground td h3 {
+				width: 300px;
+				margin-top: 50px;
+				font-size: 23px;
+				margin-right: 10px;
+				margin-left: 10px;
+				margin-top: 100px;
+			}
+
+			.involvedDesc {
+				width: 300px;
+				margin-top: 55px;
+				font-size: 12px;
+				margin-top: 200px;
+			}
+
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
+
+				.tagline {
+					font-size: 20px;
+				}
+
+				.position {
+					display: block;
+					margin-bottom: 20px;
+				}
+
+				.involveMotto {
+					font-size: 35px;
+					margin-top: 20px;
+				}
+
+				.involvedLogo {
+					margin-bottom: 40px;
+				}
+
+				.involveClose {
+					position: absolute;
+					right: 10px;
+					width: 25px;
+					top: 10px;
+					margin-top: 0;
+				}
+
+				#involveBackground {
+					position: absolute;
+				}
+			}
+
+
+	@media only screen and (max-width: 750px){
 				h1 {
 					font-size: 45px;
 					padding-top: 20px;
@@ -976,7 +1057,7 @@
 
 			#black {
 				width: 300px;
-				height: 150px;
+				height: 225px;
 				margin-right: 10px;
 				margin-left: 10px;
 			}
@@ -1030,8 +1111,6 @@
 					position: absolute;
 				}
 			}
-
-
 
 
 			@media only screen and (max-width: 414px){
