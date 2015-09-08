@@ -142,7 +142,7 @@ $(document).ready(function() {
 		document.getElementById('full').play();
 	});
 
-	$('body').bind('click touchstart',function(){
+	body.bind('click touchstart',function(){
 		if(isVideoPlaying == true){
 			videoBackgroundModule.hide();
 			close.hide();
