@@ -54,7 +54,7 @@
 	    </div>
 
 	    <form class="newsletterForm" method="POST">
-		<h1 class="involveMotto">Sign up for our newsletter</h3>
+		<h1 class="involveMotto">Sign up for our newsletter</h1>
 		    <input type="text" name="name" placeholder="name" required></input><br><br>
 		    <input type="email" name="email" placeholder="email" required></input><br><br>
 		    <input type="submit" id="submit" value="Submit"></input><br><br>
@@ -72,14 +72,14 @@
 		     }
 		 }).done(function(response) {
 		     if (response.status === 'success') {
-			 console.log('You have been added!');
+			 	$('form h1').text("Thanks! You've been added!");
 		     }
 		 }).fail(function(response) {
 		     if (response.status === 409) {
-			 console.log('This email is already on the mailing list.');
+			 alert('This email is already on the mailing list.');
 		     }
 		     else if (response.status === 500) {
-			 console.log('Unknown server error; please try again later.');
+			 alert('Unknown server error; please try again later.');
 		     }
 		 });
 	     });
