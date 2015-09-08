@@ -1,11 +1,11 @@
 	* {
-/*		-webkit-user-select: none;*/
+		/*		-webkit-user-select: none;*/
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-border-radius: 0;
 		-webkit-box-sizing: border-box;
 		-webkit-font-smoothing: antialiased;
 		-webkit-user-drag: none;
-/*		-moz-user-select: none;*/
+		/*		-moz-user-select: none;*/
 		-moz-tap-highlight-color: rgba(0,0,0,0);
 		-moz-border-radius: 0;
 		-moz-box-sizing: border-box;
@@ -188,9 +188,7 @@
 	}
 
 	#ideas:hover {
-		background-color: transparent;
-		color: #0f4366;
-		border: 2px solid #0f4366;
+opacity: 0.6;
 		cursor: pointer;
 	}
 
@@ -271,10 +269,33 @@
 /*		-webkit-transform: rotate(0);
 		-moz-transform: rotate(0);
 		transform: rotate(0);*/
-
 	}
 
 	.socialLogo:hover {
+		opacity: 0.5;
+		cursor: pointer;
+		position: relative;
+		-webkit-backface-visibility: hidden;
+/*		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		transform: rotate(0);*/
+
+	}
+
+	.safariSocialLogo {
+		width: 1px;
+		height: auto;
+		display: inline;
+		margin: 0 75px 0 75px;
+		transition: all 500ms ease;
+		-webkit-backface-visibility: hidden;
+		position: relative;
+/*		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		transform: rotate(0);*/
+	}
+
+	.safariSocialLogo:hover {
 		opacity: 0.5;
 		cursor: pointer;
 		position: relative;
@@ -367,7 +388,7 @@
 	}
 
 	.involvedLogo {
-		width: 15%;
+		width: 150px;
 		margin: 0 auto 20px auto;
 		display: block;
 	}
@@ -565,11 +586,10 @@
 	}
 
 	.newsletterForm {
-		margin: 0 auto 0 auto;
+		margin: 20px auto 0 auto;
 		display: block;
 		text-align: center;
 		display: none;
-		width: 30%;
 	}
 
 	input {
@@ -701,7 +721,7 @@
 
 			.involvedDesc {
 				width: 280px;
-				margin-top: 60px;
+				margin-top: 70px;
 				font-size: 13px;
 			}
 
@@ -735,25 +755,35 @@
 				/*		padding-top: 140px;*/
 				font-size: 65px;
 			}
-
 			.involveTablePic {
-				width: 300px;
+				width: 250px;
 			}
 
 			#black {
-				width: 300px;
+				width: 250px;
+				height: 188px;
 			}
 
 			#involveBackground td h3 {
-				width: 300px;
-				margin-top: 50px;
+				width: 250px;
+				margin-top: 35px;
 				font-size: 32px;
 			}
 
 			.involvedDesc {
-				width: 300px;
+				width: 250px;
 				margin-top: 60px;
-				font-size: 13px;
+				font-size: 12px;
+				margin-right: 25px;
+				margin-left: 25px;
+			}
+
+			#potential {
+				font-size: 25px !important;
+			}
+
+			.involveMotto {
+				font-size: 45px;
 			}
 
 			.mid {
@@ -773,30 +803,41 @@
 			}
 
 			.involveTablePic {
-				width: 250px;
+				width: 275px;
 			}
 
 			#black {
-				width: 250px;
-				height: 188px;
+				width: 275px;
+				height: 207px;
+				margin-right: 10px;
+				margin-left: 10px;
 			}
 
 			#involveBackground td h3 {
-				width: 250px;
-				margin-top: 50px;
-				font-size: 32px;
+				width: 275px;
+				margin-top: 35px;
+				font-size: 25px;
+				margin-left: 10px;
+			}
+
+			#potential {
+				font-size: 25px !important;
+				padding-bottom: 5px !important;
+				padding-top: 5px !important;
 			}
 
 			.involvedDesc {
-				width: 250px;
-				margin-top: 60px;
-				font-size: 12px;
+				width: 275px;
+				margin-top: 50px;
+				font-size: 13px;
+				margin-left: 10px;
+				margin-right: 10px;
 			}
 
 			.involveMotto {
-				font-size: 45px;
+				font-size: 40px;
 			}
-	
+
 			.mid {
 				margin-top: 225px;
 			}
@@ -828,10 +869,461 @@
 				.container {
 					margin-top: 30px;
 				}
+
+
+			}
+
+			@media only screen and (max-width: 950px){
+				.involveTablePic {
+					width: 250px;
+				}
+
+				#black {
+					width: 250px;
+					height: 188px;
+				}
+
+				#involveBackground td h3 {
+					width: 250px;
+					margin-top: 50px;
+					font-size: 23px;
+				}
+
+				.involvedDesc {
+					width: 250px;
+					margin-top: 50px;
+					font-size: 12px;
+				}
+
+				.involveMotto {
+					font-size: 35px;
+				}
+
+				.potential {
+					font-size: 20px !important;
+				}
 			}
 
 
-			@media only screen and (max-width: 414px){
+			@media only screen and (max-width: 900px){
+				.motto {
+					font-size: 45px;
+				}
+				.container p {
+					font-family: 'Clear';
+					text-align: center;
+					line-height: 1.3em;
+					font-size: 20px;
+					width: 90%;
+					margin: 0 auto 20px auto;
+					display: block;
+				}
+			}
+
+			@media only screen and (max-width: 880px){
+
+				.hero-text {
+					margin-top: 125px
+				}
+	h1 {
+					font-size: 55px;
+					width: 80%;
+					padding-top: 20px;
+					color: white;
+					margin: 0 auto 0 auto;
+				}
+
+				#potential {
+					font-size: 30px !important;
+				}
+
+				.involveTablePic {
+					width: 400px;
+					margin-bottom: 0px;
+				}
+
+				#black {
+					width: 400px;
+					height: 300px;
+					margin-right: 10px;
+					margin-left: 10px;
+					margin-top: 50px;
+				}
+
+				#involveBackground td h3 {
+					width: 400px;
+					margin-top: 50px;
+					font-size: 35px;
+					margin-right: 10px;
+					margin-left: 10px;
+				}
+
+				.involvedDesc {
+					width: 400px;
+					margin-top: 65px;
+					font-size: 20px;
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+
+				.prefix {
+					font-size: 30px;
+					margin-bottom: 0;
+				}
+
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
+
+				.tagline {
+					font-size: 20px;
+				}
+
+				.position {
+					display: block;
+					margin-bottom: 20px;
+				}
+
+				.involveMotto {
+					font-size: 40px;
+					margin-top: 20px;
+				}
+
+				.involvedLogo {
+					margin-bottom: 40px;
+				}
+
+				.involveClose {
+					position: absolute;
+					right: 10px;
+					width: 25px;
+					top: 10px;
+					margin-top: 0;
+				}
+
+				#involveBackground {
+					position: absolute;
+				}
+
+				.involveWrap {
+					margin-top: 50px;
+				}
+
+				.mottoParagraph {
+					margin-top: 20px;
+					margin-bottom: 0;
+				}	}
+
+
+
+/*			@media only screen and (max-width: 793px){
+				.involveTablePic {
+					width: 200px;
+				}
+
+				.position::after {
+					content:"\A"; white-space:pre;
+					margin-right: 
+				}
+
+				#black {
+					width: 200px;
+					height: 150px;
+					margin-right: 10px;
+					margin-left: 10px;
+				}
+
+				#involveBackground td h3 {
+					width: 200px;
+					margin-top: 50px;
+					font-size: 23px;
+					margin-right: 10px;
+					margin-left: 10px;
+				}
+
+				.involvedDesc {
+					width: 200px;
+					margin-top: 55px;
+					font-size: 12px;
+				}
+
+				.involveMotto {
+					font-size: 30px;
+				}
+				#potential {
+					font-size: 20px !important;
+				}
+			}*/
+			@media only screen and (max-width: 650px){
+
+				h1 {
+					font-size: 45px;
+					padding-top: 20px;
+					color: white;
+					width: 80%;
+					text-align: center;
+					margin: 0 auto 0 auto;
+				}
+
+				.hero-text {
+					margin-top: 20px;
+				}
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
+
+				.tagline {
+					font-size: 20px;
+				}
+
+
+				.learnLink {
+					width: 50%;
+					margin-top: 50px;
+				}
+
+				.logo {
+					display: block;
+					margin: 0 auto 0 auto;
+					width: 250px;
+				}
+
+				.right {
+					display: block;
+					margin: 20px 0 0 0;
+					text-align: center;
+					float: none;
+					transform: translateY(450px);
+					-webkit-transform: translateY(450px);
+					-moz-transform: translateY(450px);
+					-o-transform: translateY(450px);
+					-ms-transform: translateY(450px);	
+					font-size: 20px;
+				}
+
+				#ideas {
+					margin: 50px 0 0 0;
+					padding: 0;
+				}
+
+				#ideas:hover {
+					opacity: 0.8;
+					background-color: inherit;
+					color: white;
+				}
+
+				.motto {
+					font-size: 45px;
+				}
+
+				.container {
+					margin-top: 50px;
+				}
+
+
+				.mid {
+					margin-top: 0;
+				}
+
+				.container p {
+					font-size: 16px;
+					width: 85%;
+					margin: 0 auto 20px auto;
+				}
+
+				.socialLogo {
+					width: 1px;
+					margin: 0 40px 0 40px;
+				}
+
+				.newsletter {
+					width: 100%;
+				}
+
+				nav {
+					height: 100px;
+				}
+
+				footer img {
+					width: 10%;
+					display: block;
+					margin: 0 auto 30px auto !important;
+				}
+
+				footer {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					width: 100%;
+				}
+
+				footer p {
+					width: 100% !important;
+				}
+
+				.involveTablePic {
+					width: 400px;
+					/*	margin-top: 200px;*/
+				}
+
+				#black {
+					width: 400px;
+					height: 300px;
+					margin-right: 10px;
+					margin-left: 10px;
+					margin-top: 50px;
+				}
+
+				.prefix {
+					font-size: 30px;
+					margin-bottom: 0;
+				}
+
+				.involveWrap p {
+					margin-top: 50px
+				}
+
+
+				#involveBackground td h3 {
+					width: 400px;
+					margin-top: 50px;
+					font-size: 35px;
+					margin-right: 10px;
+					margin-left: 10px;
+					margin-top: 100px;
+				}
+
+				.involvedDesc {
+					width: 400px;
+					margin-top: 80px !important;
+					font-size: 18px;
+				}
+
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
+
+				.tagline {
+					font-size: 20px;
+				}
+
+				.position {
+					display: block;
+					margin-bottom: 20px;
+				}
+
+				.involveMotto {
+					font-size: 40px;
+					margin-top: 20px;
+				}
+
+				.involvedLogo {
+					margin-bottom: 40px;
+				}
+
+				.involveClose {
+					position: absolute;
+					right: 10px;
+					width: 25px;
+					top: 10px;
+					margin-top: 0;
+				}
+
+				#involveBackground {
+					position: absolute;
+				}
+
+				.mottoParagraph {
+					margin-top: 25px;
+				}
+			}
+
+/*
+			@media only screen and (max-width: 750px){
+				h1 {
+					font-size: 55px;
+					padding-top: 20px;
+					color: white;
+				}
+
+				.involveTablePic {
+					width: 400px;
+					margin-bottom: 0px;
+				}
+
+				#black {
+					width: 400px;
+					height: 300px;
+					margin-right: 10px;
+					margin-left: 10px;
+					margin-top: 30px;
+				}
+
+				#involveBackground td h3 {
+					width: 400px;
+					margin-top: 50px;
+					font-size: 23px;
+					margin-right: 10px;
+					margin-left: 10px;
+				}
+
+				.involvedDesc {
+					width: 400px;
+					margin-top: 55px;
+					font-size: 14px;
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+
+				.top {
+					background-color: #0f4366;
+					height: 736px;
+				}	
+
+				.tagline {
+					font-size: 20px;
+				}
+
+				.position {
+					display: block;
+					margin-bottom: 20px;
+				}
+
+				.involveMotto {
+					font-size: 40px;
+					margin-top: 20px;
+				}
+
+				.involvedLogo {
+					margin-bottom: 40px;
+				}
+
+				.involveClose {
+					position: absolute;
+					right: 10px;
+					width: 25px;
+					top: 10px;
+					margin-top: 0;
+				}
+
+				#involveBackground {
+					position: absolute;
+				}
+
+				.involveWrap {
+					margin-top: 50px;
+				}
+
+				.mottoParagraph {
+					margin-top: 0px;
+					margin-bottom: 50px;
+				}
+			}*/
+
+
+			@media only screen and (max-width: 475px){
 
 				h1 {
 					font-size: 45px;
@@ -854,9 +1346,13 @@
 					margin-bottom: 20px;
 				}
 
+				.mottoParagraph{
+					margin-top: 10px !important;
+				}
+
 				.involveMotto {
 					font-size: 35px;
-					margin-top: 20px;
+					margin-top: 50px;
 				}
 
 				.involvedLogo {
@@ -958,10 +1454,43 @@
 				width: 100% !important;
 			}
 
+					.involveTablePic {
+					width: 300px;
+					margin-bottom: 0px;
+				}
+
+				#black {
+					width: 300px;
+					height: 225px;
+					margin-right: 10px;
+					margin-left: 10px;
+					margin-top: 50px;
+				}
+
+				#involveBackground td h3 {
+					width: 300px;
+					margin-top: 50px;
+					font-size: 35px;
+					margin-right: 10px;
+					margin-left: 10px;
+				}
+
+				.involvedDesc {
+					width: 300px;
+					margin-top: 65px !important;
+					font-size: 14px;
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+
 		}
 
-
-
+	
+@media only screen and (max-width: 437px){ 
+	h1 {
+		font-size: 40px;
+	}
+}
 
 		@media only screen and (max-width: 375px){
 
@@ -980,10 +1509,10 @@
 			.tagline {
 				font-size: 20px;
 			}
-
+/*
 			.play {
 				display: none;
-			}
+			}*/
 
 			.learnLink {
 				width: 50%;
@@ -999,7 +1528,7 @@
 
 			.involveMotto {
 				font-size: 30px;
-				margin-top:450px;
+				/*			margin-top:450px;*/
 			}
 
 			.involveClose {
@@ -1034,7 +1563,7 @@
 			}
 
 			.motto {
-				font-size: 45px;
+				font-size: 32px;
 			}
 
 			.container {
@@ -1080,6 +1609,10 @@
 
 		@media only screen and (max-width: 320px){
 
+			#involveBackground {
+				position: absolute;
+			}
+
 			h1 {
 				font-size: 35px;
 				padding-top: 20px;
@@ -1089,14 +1622,14 @@
 
 			.involveMotto {
 				font-size: 25px;
-				margin-top:570px;
+				margin-top:30px;
 			}
 
 			.involveClose {
 				position: absolute;
 				right: 10px;
-				width: 30px;
-				top: 530px;
+				width: 20px;
+				top: 10px;
 				margin-top: 0;
 			}
 
