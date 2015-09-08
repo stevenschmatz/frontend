@@ -1,3 +1,7 @@
+$(window).load(function(){
+	     $('.load').hide();
+});
+
 $(document).ready(function() {
 
 	var herotext = $('.hero-text'),
@@ -194,16 +198,40 @@ $(document).ready(function() {
 		}
 	});
 
-	// $('.socialLogo').hover(function(){
-	// 	if(is_safari){
-	// 		alert('is safari');
-	// 		// $(this).removeClass('socialLogo',function(){
-	// 		// 	$(this).addClass('safariSocialLogo');
-	// 		// });
-	// 	} else {
-	// 		alert('is not safari');
-	// 	}
-	// })
+	 document.getElementById('full').addEventListener('loadedmetadata', function() {
+	     this.currentTime = 155;
+	 });
+	 
+	 setInterval(function(){
+	     var full = document.getElementById('full');
+	     if(full.currentTime > 170){
+		 full.currentTime = 155;
+	     }
+	 },100);
+
+	 $('.newsletterForm').submit(function(e) {
+		 e.preventDefault();
+		 $.ajax({
+		     url: 'https://api.optimizemi.org/newsletter',
+		     dataType: 'json',
+		     type: 'POST',
+		     data: {
+			 name: $(".newsletterForm input[name=name]").val(),
+			 email: $(".newsletterForm input[name=email]").val()
+		     }
+		 }).done(function(response) {
+		     if (response.status === 'success') {
+			 	$('form h1').text("Thanks! You've been added!");
+		     }
+		 }).fail(function(response) {
+		     if (response.status === 409) {
+			 alert('This email is already on the mailing list.');
+		     }
+		     else if (response.status === 500) {
+			 alert('Unknown server error; please try again later.');
+		     }
+		 });
+	    });
 
 	$(window).scroll(function(event){
 
