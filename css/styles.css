@@ -188,9 +188,7 @@
 	}
 
 	#ideas:hover {
-		background-color: transparent;
-		color: #0f4366;
-		border: 2px solid #0f4366;
+opacity: 0.6;
 		cursor: pointer;
 	}
 
@@ -297,8 +295,7 @@
 		transform: rotate(0);*/
 	}
 
-	.safariS
-	ocialLogo:hover {
+	.safariSocialLogo:hover {
 		opacity: 0.5;
 		cursor: pointer;
 		position: relative;
@@ -970,7 +967,8 @@
 				}
 
 				.prefix {
-					margin-bottom: -80px;
+					font-size: 30px;
+					margin-bottom: 0;
 				}
 
 				.top {
@@ -1013,8 +1011,8 @@
 				}
 
 				.mottoParagraph {
-					margin-top: 0px;
-					margin-bottom: 50px;
+					margin-top: 20px;
+					margin-bottom: 0;
 				}	}
 
 
@@ -1110,7 +1108,7 @@
 				}
 
 				#ideas:hover {
-					opacity: 0.5;
+					opacity: 0.8;
 					background-color: inherit;
 					color: white;
 				}
@@ -1177,12 +1175,14 @@
 				}
 
 				.prefix {
-					margin-bottom: -80px;
+					font-size: 30px;
+					margin-bottom: 0;
 				}
 
 				.involveWrap p {
 					margin-top: 50px
 				}
+
 
 				#involveBackground td h3 {
 					width: 400px;
