@@ -21,18 +21,6 @@
 	    <source src="https://optimizemi.s3.amazonaws.com/optimize_1080.mp4" type="video/mp4">
 	    Your browser does not support the <code>video</code> element.
 	</video>
-	<script>
-	 document.getElementById('full').addEventListener('loadedmetadata', function() {
-	     this.currentTime = 155;
-	 });
-	 setInterval(function(){
-	     var full = document.getElementById('full');
-	     if(full.currentTime > 170){
-		 full.currentTime = 155;
-	     }
-	 },100);
-
-	</script>
 	<div id="involveBackground">
 	    <img src="img/close.png" class="involveClose"/>
 	    <div class="involveWrap">
@@ -58,31 +46,6 @@
 		    <input type="email" name="email" placeholder="email" required></input><br><br>
 		    <input type="submit" id="submit" value="Submit"></input><br><br>
 	    </form>
-	    <script>
-	     $('.newsletterForm').submit(function(e) {
-		 e.preventDefault();
-		 $.ajax({
-		     url: 'https://api.optimizemi.org/newsletter',
-		     dataType: 'json',
-		     type: 'POST',
-		     data: {
-			 name: $(".newsletterForm input[name=name]").val(),
-			 email: $(".newsletterForm input[name=email]").val()
-		     }
-		 }).done(function(response) {
-		     if (response.status === 'success') {
-			 	$('form h1').text("Thanks! You've been added!");
-		     }
-		 }).fail(function(response) {
-		     if (response.status === 409) {
-			 alert('This email is already on the mailing list.');
-		     }
-		     else if (response.status === 500) {
-			 alert('Unknown server error; please try again later.');
-		     }
-		 });
-	     });
-	    </script>
 	    <img src="img/optimize_logo.png" class="involvedLogo" />
 	</div>
 	<section class="top">
