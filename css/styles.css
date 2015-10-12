@@ -1830,7 +1830,7 @@ opacity: 0.6;
 }
 
 #apply-popup {
-    padding: 10%;
-    width: 70%;
-    max-height: 100%;
+    padding: 5%;
+    height: 100%;
+    width: auto;
 }
