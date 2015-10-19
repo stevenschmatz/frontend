@@ -2,26 +2,6 @@ $(window).load(function(){
 	     $('.load').hide();
 });
 
-///////////////
-// Apply popup
-
-/*
-function showImage() {
-	var image = document.getElementById('cover');
-	image.style.display = 'block';
-}
-*/
-
-$(document).click(function(event) { 
-    if(!$(event.target).closest('#apply-popup').length) {
-        if($('#apply-popup').is(":visible")) {
-            $('#cover').hide();
-        }
-    }        
-})
-
-////////////////
-
 $(document).ready(function() {
 
 	var herotext = $('.hero-text'),
